@@ -61,7 +61,7 @@ export default async function TrainingPage() {
               <Label htmlFor="description">Description</Label>
               <Input id="description" name="description" />
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               <div>
                 <Label htmlFor="duration_minutes">Duration (min)</Label>
                 <Input id="duration_minutes" name="duration_minutes" type="number" />

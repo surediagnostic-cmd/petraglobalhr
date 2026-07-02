@@ -35,12 +35,12 @@ export default async function ManualPage() {
           return (
             <Link key={doc.id} href={`/manual/${doc.id}`}>
               <Card className="transition-shadow hover:shadow-md">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <CardTitle>{doc.title}</CardTitle>
                     <p className="text-xs text-slate-500">Version {doc.version}</p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     <Badge tone={doc.status === "active" ? "success" : "neutral"}>{doc.status}</Badge>
                     <Badge tone={isAcknowledged ? "success" : "warning"}>
                       {isAcknowledged ? "Acknowledged" : "Needs acknowledgement"}
