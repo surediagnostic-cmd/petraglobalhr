@@ -24,6 +24,32 @@ export async function acceptInviteAction(fullName: string): Promise<{ error?: st
     return { error: "No pending invite found for this email. Ask HR to send you a new one." };
   }
 
+  // A profile's id IS the auth user's id (1:1) — one login can only ever
+  // belong to one company. If a profile already exists, this is either a
+  // harmless re-click of an already-accepted invite (same company: let it
+  // through) or an invite to a second, different company on an email
+  // that's already set up elsewhere (block with a clear reason instead of
+  // a raw duplicate-key error).
+  const { data: existingProfile } = await admin
+    .from("hrm_profiles")
+    .select("company_id")
+    .eq("id", user.id)
+    .maybeSingle();
+
+  if (existingProfile) {
+    if (existingProfile.company_id === invite.company_id) {
+      await admin
+        .from("hrm_invites")
+        .update({ status: "accepted", accepted_at: new Date().toISOString() })
+        .eq("id", invite.id);
+      return {};
+    }
+    return {
+      error:
+        "This email already has an account with another company. One login can only belong to a single company — use a different email to accept this invite.",
+    };
+  }
+
   // Service role bypasses RLS — required here since the user has no
   // `profiles` row yet, and every RLS policy on `profiles` needs one to
   // resolve current_company()/current_role().
