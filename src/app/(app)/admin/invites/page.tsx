@@ -1,14 +1,9 @@
 import { requireHrOrMd } from "@/lib/auth/session";
 import { createClient } from "@/lib/supabase/server";
-import { createInviteAction } from "./actions";
+import { CreateStaffForm } from "./create-staff-form";
 import { RevokeInviteButton } from "./revoke-invite-button";
 import { Card, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-import { ActionForm } from "@/components/action-form";
-import { SubmitButton } from "@/components/submit-button";
 
 export default async function InvitesPage() {
   await requireHrOrMd();
@@ -39,60 +34,17 @@ export default async function InvitesPage() {
 
   return (
     <div className="max-w-2xl">
-      <h1 className="mb-6 text-xl font-semibold dark:text-slate-100">Invites</h1>
+      <h1 className="mb-1 text-xl font-semibold dark:text-slate-100">Staff accounts</h1>
+      <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">
+        Creates the login directly with a generated password — share it with the new staff member
+        yourself. No email is sent.
+      </p>
 
       <Card className="mb-6">
-        <CardTitle>Invite a new staff member</CardTitle>
-        <ActionForm action={createInviteAction} className="mt-3 space-y-3">
-          <div>
-            <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" required />
-          </div>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <div>
-              <Label htmlFor="branch_id">Branch</Label>
-              <Select id="branch_id" name="branch_id">
-                <option value="">None</option>
-                {(branches ?? []).map((b) => (
-                  <option key={b.id} value={b.id}>
-                    {b.name}
-                  </option>
-                ))}
-              </Select>
-            </div>
-            <div>
-              <Label htmlFor="department_id">Department</Label>
-              <Select id="department_id" name="department_id">
-                <option value="">None</option>
-                {(departments ?? []).map((d) => (
-                  <option key={d.id} value={d.id}>
-                    {d.name}
-                  </option>
-                ))}
-              </Select>
-            </div>
-            <div>
-              <Label htmlFor="designation_id">Designation</Label>
-              <Select id="designation_id" name="designation_id">
-                <option value="">None</option>
-                {(designations ?? []).map((d) => (
-                  <option key={d.id} value={d.id}>
-                    {d.title}
-                  </option>
-                ))}
-              </Select>
-            </div>
-            <div>
-              <Label htmlFor="role">Role</Label>
-              <Select id="role" name="role" defaultValue="staff">
-                <option value="staff">Staff</option>
-                <option value="hr_manager">HR Manager</option>
-                <option value="md">MD</option>
-              </Select>
-            </div>
-          </div>
-          <SubmitButton pendingText="Sending...">Send invite</SubmitButton>
-        </ActionForm>
+        <CardTitle>Create a staff account</CardTitle>
+        <div className="mt-3">
+          <CreateStaffForm branches={branches ?? []} departments={departments ?? []} designations={designations ?? []} />
+        </div>
       </Card>
 
       <div className="space-y-2">
@@ -114,7 +66,7 @@ export default async function InvitesPage() {
           </Card>
         ))}
         {invites?.length === 0 && (
-          <p className="text-sm text-slate-500 dark:text-slate-400">No invites sent yet.</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">No staff accounts created yet.</p>
         )}
       </div>
     </div>

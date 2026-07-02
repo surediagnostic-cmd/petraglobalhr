@@ -5,31 +5,42 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { requireSuperAdmin } from "@/lib/auth/session";
+import { generatePassword } from "@/lib/generate-password";
 
 function slugify(name: string): string {
   return name.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-export async function createCompanyAction(formData: FormData): Promise<{ error?: string }> {
+export type CreateCompanyResult = {
+  error?: string;
+  credentials?: { email: string; password: string };
+};
+
+// Email invites depend on Supabase's shared email service, which isn't
+// reliable enough for real onboarding — this creates the first MD's
+// account directly with a generated password instead, for the super
+// admin to hand off through whatever channel actually reaches them.
+export async function createCompanyAction(formData: FormData): Promise<CreateCompanyResult> {
   await requireSuperAdmin();
   const name = String(formData.get("name") ?? "").trim();
   const mdEmail = String(formData.get("md_email") ?? "").trim().toLowerCase();
+  const mdFullName = String(formData.get("md_full_name") ?? "").trim();
 
   if (!name) return { error: "Company name is required." };
   if (!mdEmail) return { error: "The first MD's email is required." };
+  if (!mdFullName) return { error: "The first MD's full name is required." };
 
   const slug = slugify(name);
   const supabase = await createClient();
   // Service-role: requireSuperAdmin() already gated this whole action, so
-  // it's safe to bypass RLS here — needed because inviting the FIRST MD of
-  // a brand-new company means writing an hrm_invites row for a company
-  // that isn't the caller's own, which the normal "manage invites for your
-  // own company" policy correctly refuses to allow via the session client.
+  // it's safe to bypass RLS here — needed because provisioning the FIRST MD
+  // of a brand-new company means writing a profile for a company that
+  // isn't the caller's own.
   const admin = createAdminClient();
 
-  // Retrying after a partial failure (company created, invite failed)
-  // shouldn't hit a duplicate-slug error — reuse the existing row instead
-  // of trying to insert it again.
+  // Retrying after a partial failure (company created, account creation
+  // failed) shouldn't hit a duplicate-slug error — reuse the existing row
+  // instead of trying to insert it again.
   const { data: existingCompany } = await supabase
     .from("hrm_companies")
     .select("id")
@@ -51,36 +62,44 @@ export async function createCompanyAction(formData: FormData): Promise<{ error?:
     companyId = company.id;
   }
 
-  const { data: existingInvite } = await admin
-    .from("hrm_invites")
-    .select("id")
-    .eq("company_id", companyId)
-    .eq("email", mdEmail)
-    .maybeSingle();
-
-  if (!existingInvite) {
-    const { error: inviteError } = await admin.from("hrm_invites").insert({
-      company_id: companyId,
-      email: mdEmail,
-      role: "md",
-    });
-
-    if (inviteError) return { error: inviteError.message };
-  }
-
-  // auth.admin is Supabase Auth's own admin API, not governed by our RLS —
-  // it always requires the service-role key regardless of who's calling.
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const { error: authError } = await admin.auth.admin.inviteUserByEmail(mdEmail, {
-    redirectTo: `${siteUrl}/auth/callback?next=/invite`,
+  const password = generatePassword();
+  const { data: created, error: createErr } = await admin.auth.admin.createUser({
+    email: mdEmail,
+    password,
+    email_confirm: true,
   });
 
-  if (authError && authError.message !== "A user with this email address has already been registered") {
-    return { error: authError.message };
+  if (createErr) {
+    if (createErr.code === "email_exists") {
+      return { error: "This email already has an account. Use a different email for the first MD." };
+    }
+    return { error: createErr.message };
   }
 
+  const { error: profileError } = await admin.from("hrm_profiles").insert({
+    id: created.user.id,
+    company_id: companyId,
+    role: "md",
+    full_name: mdFullName,
+    date_joined: new Date().toISOString().slice(0, 10),
+  });
+
+  if (profileError) {
+    // Roll back the auth user so retrying doesn't hit "already registered".
+    await admin.auth.admin.deleteUser(created.user.id);
+    return { error: profileError.message };
+  }
+
+  await admin.from("hrm_invites").insert({
+    company_id: companyId,
+    email: mdEmail,
+    role: "md",
+    status: "accepted",
+    accepted_at: new Date().toISOString(),
+  });
+
   revalidatePath("/admin/companies");
-  return {};
+  return { credentials: { email: mdEmail, password } };
 }
 
 // Full admin access to another company, same as that company's own MD —

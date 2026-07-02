@@ -10,7 +10,7 @@ const sections = [
   { href: "/admin/departments", title: "Departments", description: "Manage company departments/units" },
   { href: "/admin/designations", title: "Designations", description: "Job titles, career tracks & grades" },
   { href: "/admin/staff", title: "Staff", description: "View and manage staff profiles" },
-  { href: "/admin/invites", title: "Invites", description: "Invite new staff by email" },
+  { href: "/admin/invites", title: "Staff accounts", description: "Create staff logins directly with a generated password" },
 ];
 
 export default async function AdminPage() {

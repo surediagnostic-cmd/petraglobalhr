@@ -1,14 +1,10 @@
 import { requireSuperAdmin } from "@/lib/auth/session";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { createCompanyAction } from "./actions";
+import { CreateCompanyForm } from "./create-company-form";
 import { VisitCompanyButton } from "./visit-company-button";
 import { Card, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import { ActionForm } from "@/components/action-form";
-import { SubmitButton } from "@/components/submit-button";
 
 export default async function CompaniesPage() {
   const profile = await requireSuperAdmin();
@@ -117,17 +113,10 @@ export default async function CompaniesPage() {
 
       <Card className="mb-6">
         <CardTitle>Add a company</CardTitle>
-        <ActionForm action={createCompanyAction} className="mt-3 space-y-3">
-          <div>
-            <Label htmlFor="name">Company name</Label>
-            <Input id="name" name="name" required placeholder="e.g. Hopestone Hospital" />
-          </div>
-          <div>
-            <Label htmlFor="md_email">First MD&apos;s email</Label>
-            <Input id="md_email" name="md_email" type="email" required />
-          </div>
-          <SubmitButton pendingText="Creating...">Create company & invite MD</SubmitButton>
-        </ActionForm>
+        <p className="mt-1 mb-3 text-sm text-slate-500 dark:text-slate-400">
+          Creates the first MD&apos;s login directly with a generated password — no email is sent.
+        </p>
+        <CreateCompanyForm />
       </Card>
 
       <div className="space-y-2">
