@@ -106,6 +106,13 @@ export async function visitCompanyAction(targetCompanyId: string): Promise<void>
     redirect("/admin");
   }
 
+  // The sidebar (company name, role, nav) lives in the shared (app) layout,
+  // which Next.js otherwise reuses across a Server Action redirect instead
+  // of re-rendering — so switching companies silently left the old
+  // company's name showing. Revalidating the whole tree forces every page,
+  // including that layout, to refetch the now-changed profile.
+  revalidatePath("/", "layout");
+
   if (me.home_company_id && targetCompanyId === me.home_company_id) {
     // Returning home — restore the original assignment and clear the marker.
     await admin
