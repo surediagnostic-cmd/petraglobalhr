@@ -9,7 +9,7 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 // The two "auto" items are derived from manual_acknowledgements against the
 // active document of each type — not manually ticked, since we already
 // have the real signal for them elsewhere in the app (mirrors Op Manual
-// §12.4's pre-appraisal checklist).
+// 12.4's pre-appraisal checklist).
 async function computeAutoChecklist(
   supabase: SupabaseClient,
   companyId: string,

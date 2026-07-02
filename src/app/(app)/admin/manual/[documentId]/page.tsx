@@ -51,7 +51,7 @@ export default async function AdminManualDocumentPage({
             <div className="flex items-center justify-between gap-3">
               <Link href={`/admin/manual/${document.id}/${s.id}`} className="min-w-0 flex-1 hover:underline">
                 <CardTitle>
-                  §{s.section_number} {s.title}
+                  {s.section_number} {s.title}
                 </CardTitle>
                 {s.subtitle && <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{s.subtitle}</p>}
               </Link>

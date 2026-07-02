@@ -31,7 +31,7 @@ export default async function ManualSectionPage({
         ← Back
       </Link>
       <h1 className="mb-1 text-xl font-semibold dark:text-slate-100">
-        §{section.section_number} {section.title}
+        {section.section_number} {section.title}
       </h1>
       {section.subtitle && (
         <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">{section.subtitle}</p>

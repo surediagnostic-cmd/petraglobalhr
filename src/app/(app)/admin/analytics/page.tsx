@@ -88,7 +88,7 @@ export default async function AnalyticsPage() {
   }
 
   // Acknowledgement completion, per active document (operation manual /
-  // staff handbook), against total staff — a direct read on the §12.4
+  // staff handbook), against total staff — a direct read on the 12.4
   // pre-appraisal gate's compliance state across the whole company.
   const ackByDocument: { title: string; version: string; acknowledgedCount: number }[] = [];
   for (const doc of activeManuals ?? []) {

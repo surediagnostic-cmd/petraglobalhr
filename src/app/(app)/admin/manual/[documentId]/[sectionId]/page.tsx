@@ -44,7 +44,7 @@ export default async function AdminManualSectionPage({
         ← Back to sections
       </Link>
       <h1 className="mb-6 text-xl font-semibold dark:text-slate-100">
-        §{section.section_number} {section.title}
+        {section.section_number} {section.title}
       </h1>
 
       <Card className="mb-6">

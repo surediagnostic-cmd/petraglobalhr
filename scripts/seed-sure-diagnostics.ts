@@ -259,7 +259,7 @@ async function upsertSections(
       if (error) throw error;
     }
 
-    console.log(`  §${s.number} ${s.title} — ${s.kpis.length} KPIs, dept=${s.departmentName ?? (s.mdOnly ? "MD/HR only" : "company-wide")}`);
+    console.log(`  ${s.number} ${s.title} — ${s.kpis.length} KPIs, dept=${s.departmentName ?? (s.mdOnly ? "MD/HR only" : "company-wide")}`);
   }
 }
 

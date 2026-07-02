@@ -59,7 +59,7 @@ export default async function AppraisalDetailPage({
         <Card>
           <CardTitle>Pre-appraisal checklist</CardTitle>
           <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-            All items must be checked before this appraisal can be marked complete (Op Manual §12.4).
+            All items must be checked before this appraisal can be marked complete (Op Manual 12.4).
           </p>
           <div className="mt-3 space-y-2">
             {CHECKLIST_ITEMS.map((item) => (

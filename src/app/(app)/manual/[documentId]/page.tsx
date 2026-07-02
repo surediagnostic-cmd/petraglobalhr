@@ -62,7 +62,7 @@ export default async function ManualDocumentPage({
           <Link key={s.id} href={`/manual/${document.id}/${s.id}`}>
             <Card className="transition-shadow hover:shadow-md">
               <CardTitle>
-                §{s.section_number} {s.title}
+                {s.section_number} {s.title}
               </CardTitle>
               {s.subtitle && <p className="mt-1 text-sm text-slate-500">{s.subtitle}</p>}
             </Card>
