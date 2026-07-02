@@ -4,6 +4,7 @@ import { Card, CardTitle } from "@/components/ui/card";
 
 const sections = [
   { href: "/admin/analytics", title: "Analytics", description: "Staff, goals, training & acknowledgement numbers" },
+  { href: "/admin/manual", title: "Manual & Handbook", description: "Author your Operation Manual and Staff Handbook" },
   { href: "/admin/appraisals", title: "Appraisals", description: "Run quarterly/annual staff appraisals" },
   { href: "/admin/departments", title: "Departments", description: "Manage company departments/units" },
   { href: "/admin/designations", title: "Designations", description: "Job titles, career tracks & grades" },
