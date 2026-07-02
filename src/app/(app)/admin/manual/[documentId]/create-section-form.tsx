@@ -10,7 +10,7 @@ export function CreateSectionForm({ documentId }: { documentId: string }) {
   const action = createSectionAction.bind(null, documentId);
 
   return (
-    <ActionForm action={action} className="grid grid-cols-[100px_1fr_auto] items-end gap-3">
+    <ActionForm action={action} className="grid grid-cols-1 items-end gap-3 sm:grid-cols-[100px_1fr_auto]">
       <div>
         <Label htmlFor="section_number">Number</Label>
         <Input id="section_number" name="section_number" required placeholder="e.g. 16" />

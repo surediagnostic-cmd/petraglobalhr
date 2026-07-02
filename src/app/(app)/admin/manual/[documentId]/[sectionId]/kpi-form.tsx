@@ -13,8 +13,11 @@ export function KpiForm({ sectionId }: { sectionId: string }) {
   const action = addKpiAction.bind(null, sectionId);
 
   return (
-    <ActionForm action={action} className="grid grid-cols-[1fr_100px_100px_120px_auto] items-end gap-2">
-      <div>
+    <ActionForm
+      action={action}
+      className="grid grid-cols-2 items-end gap-2 sm:grid-cols-[1fr_100px_100px_120px_auto]"
+    >
+      <div className="col-span-2 sm:col-span-1">
         <Label htmlFor="name">KPI name</Label>
         <Input id="name" name="name" required placeholder="e.g. TAT compliance" />
       </div>

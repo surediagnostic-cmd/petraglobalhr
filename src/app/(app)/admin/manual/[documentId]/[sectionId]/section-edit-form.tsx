@@ -32,7 +32,7 @@ export function SectionEditForm({
 
   return (
     <ActionForm action={action} className="space-y-4">
-      <div className="grid grid-cols-[100px_1fr] gap-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-[100px_1fr]">
         <div>
           <Label htmlFor="section_number">Number</Label>
           <Input id="section_number" name="section_number" defaultValue={section.section_number} required />

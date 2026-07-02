@@ -32,10 +32,10 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         homeCompanyId={profile.home_company_id}
         homeCompanyName={homeCompanyName}
       />
-      <header className="flex items-center justify-end border-b border-slate-200 bg-white px-6 py-3 dark:border-slate-800 dark:bg-slate-900">
+      <header className="flex items-center justify-end border-b border-slate-200 bg-white px-16 py-3 dark:border-slate-800 dark:bg-slate-900">
         <SignOutButton />
       </header>
-      <main className="flex-1 overflow-y-auto p-6">{children}</main>
+      <main className="flex-1 overflow-y-auto p-4 sm:p-6">{children}</main>
     </div>
   );
 }

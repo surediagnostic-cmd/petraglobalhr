@@ -49,9 +49,9 @@ export default async function InvitesPage() {
 
       <div className="space-y-2">
         {(invites ?? []).map((i) => (
-          <Card key={i.id} className="flex items-center justify-between py-3">
-            <div>
-              <p className="text-sm font-medium dark:text-slate-200">{i.email}</p>
+          <Card key={i.id} className="flex flex-wrap items-center justify-between gap-2 py-3">
+            <div className="min-w-0">
+              <p className="text-sm font-medium dark:text-slate-200 break-words">{i.email}</p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
                 {i.designations?.title ?? i.departments?.name ?? "—"}
                 {i.branches?.name ? ` · ${i.branches.name}` : ""} · {i.role}
