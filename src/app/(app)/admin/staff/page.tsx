@@ -14,7 +14,7 @@ export default async function StaffPage() {
     supabase
       .from("hrm_profiles")
       .select(
-        "id, full_name, role, department_id, designation_id, reports_to, departments:hrm_departments(name), designations:hrm_designations(title)",
+        "id, full_name, role, department_id, designation_id, reports_to, departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title)",
       )
       .order("full_name")
       .returns<

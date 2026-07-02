@@ -21,7 +21,7 @@ export async function getCurrentProfile(): Promise<SessionProfile | null> {
   const { data, error } = await supabase
     .from("hrm_profiles")
     .select(
-      "*, companies:hrm_companies!inner(name), departments:hrm_departments(name), designations:hrm_designations(title)",
+      "*, companies:hrm_companies!company_id!inner(name), departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title)",
     )
     .eq("id", authData.user.id)
     .single();

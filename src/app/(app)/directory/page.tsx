@@ -11,7 +11,7 @@ export default async function DirectoryPage() {
 
   const { data: staff } = await supabase
     .from("hrm_profiles")
-    .select("id, full_name, role, phone, departments:hrm_departments(name), designations:hrm_designations(title), manager:reports_to(full_name)")
+    .select("id, full_name, role, phone, departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title), manager:reports_to(full_name)")
     .order("full_name")
     .returns<
       {
