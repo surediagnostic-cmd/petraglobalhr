@@ -3,6 +3,7 @@ import { getCurrentProfile } from "@/lib/auth/session";
 import { isHrOrMd, roleLabel } from "@/lib/auth/roles";
 import { NavLink } from "@/components/nav-link";
 import { SignOutButton } from "@/components/sign-out-button";
+import { Badge } from "@/components/ui/badge";
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const profile = await getCurrentProfile();
@@ -17,6 +18,11 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           <p className="text-xs text-slate-400 dark:text-slate-500">
             {profile.designation_title ?? roleLabel(profile.role)}
           </p>
+          {profile.is_super_admin && (
+            <Badge tone="warning" className="mt-2">
+              Super Admin
+            </Badge>
+          )}
         </div>
         <nav className="space-y-1">
           <NavLink href="/manual">Manual & Handbook</NavLink>
