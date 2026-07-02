@@ -13,10 +13,12 @@ import { SubmitButton } from "@/components/submit-button";
 export default async function InvitesPage() {
   await requireHrOrMd();
   const supabase = await createClient();
-  const [{ data: invites }, { data: departments }, { data: designations }] = await Promise.all([
+  const [{ data: invites }, { data: branches }, { data: departments }, { data: designations }] = await Promise.all([
     supabase
       .from("hrm_invites")
-      .select("id, email, role, status, created_at, departments:hrm_departments(name), designations:hrm_designations(title)")
+      .select(
+        "id, email, role, status, created_at, branches:hrm_branches(name), departments:hrm_departments(name), designations:hrm_designations(title)",
+      )
       .order("created_at", { ascending: false })
       .returns<
         {
@@ -25,10 +27,12 @@ export default async function InvitesPage() {
           role: string;
           status: string;
           created_at: string;
+          branches: { name: string } | null;
           departments: { name: string } | null;
           designations: { title: string } | null;
         }[]
       >(),
+    supabase.from("hrm_branches").select("id, name").order("name"),
     supabase.from("hrm_departments").select("id, name").order("name"),
     supabase.from("hrm_designations").select("id, title").order("title"),
   ]);
@@ -44,7 +48,18 @@ export default async function InvitesPage() {
             <Label htmlFor="email">Email</Label>
             <Input id="email" name="email" type="email" required />
           </div>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div>
+              <Label htmlFor="branch_id">Branch</Label>
+              <Select id="branch_id" name="branch_id">
+                <option value="">None</option>
+                {(branches ?? []).map((b) => (
+                  <option key={b.id} value={b.id}>
+                    {b.name}
+                  </option>
+                ))}
+              </Select>
+            </div>
             <div>
               <Label htmlFor="department_id">Department</Label>
               <Select id="department_id" name="department_id">
@@ -86,7 +101,8 @@ export default async function InvitesPage() {
             <div>
               <p className="text-sm font-medium dark:text-slate-200">{i.email}</p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                {i.designations?.title ?? i.departments?.name ?? "—"} · {i.role}
+                {i.designations?.title ?? i.departments?.name ?? "—"}
+                {i.branches?.name ? ` · ${i.branches.name}` : ""} · {i.role}
               </p>
             </div>
             <div className="flex items-center gap-2">

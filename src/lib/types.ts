@@ -16,6 +16,13 @@ export interface Department {
   name: string;
 }
 
+export interface Branch {
+  id: string;
+  company_id: string;
+  name: string;
+  address: string | null;
+}
+
 export interface Designation {
   id: string;
   company_id: string;
@@ -28,6 +35,7 @@ export interface Designation {
 export interface Profile {
   id: string;
   company_id: string;
+  branch_id: string | null;
   department_id: string | null;
   designation_id: string | null;
   role: RoleTier;
@@ -37,6 +45,10 @@ export interface Profile {
   employment_status: EmploymentStatus;
   date_joined: string | null;
   reports_to: string | null;
+  home_company_id: string | null;
+  home_role: RoleTier | null;
+  home_department_id: string | null;
+  home_designation_id: string | null;
 }
 
 export type ManualDocType = "operation_manual" | "staff_handbook";

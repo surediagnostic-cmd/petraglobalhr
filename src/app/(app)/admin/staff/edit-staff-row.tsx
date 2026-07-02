@@ -6,12 +6,13 @@ import { ActionForm } from "@/components/action-form";
 import { SubmitButton } from "@/components/submit-button";
 import { Select } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import type { Department, Designation } from "@/lib/types";
+import type { Branch, Department, Designation } from "@/lib/types";
 
 interface StaffRow {
   id: string;
   full_name: string;
   role: string;
+  branch_id: string | null;
   department_id: string | null;
   designation_id: string | null;
   reports_to: string | null;
@@ -19,11 +20,13 @@ interface StaffRow {
 
 export function EditStaffRow({
   staff,
+  branches,
   departments,
   designations,
   staffOptions,
 }: {
   staff: StaffRow;
+  branches: Pick<Branch, "id" | "name">[];
   departments: Pick<Department, "id" | "name">[];
   designations: Pick<Designation, "id" | "title">[];
   staffOptions: { id: string; full_name: string }[];
@@ -45,6 +48,14 @@ export function EditStaffRow({
         <option value="staff">Staff</option>
         <option value="hr_manager">HR Manager</option>
         <option value="md">MD</option>
+      </Select>
+      <Select name="branch_id" defaultValue={staff.branch_id ?? ""}>
+        <option value="">No branch</option>
+        {branches.map((b) => (
+          <option key={b.id} value={b.id}>
+            {b.name}
+          </option>
+        ))}
       </Select>
       <Select name="department_id" defaultValue={staff.department_id ?? ""}>
         <option value="">No department</option>

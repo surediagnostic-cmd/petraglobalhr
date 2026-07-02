@@ -56,6 +56,7 @@ export async function acceptInviteAction(fullName: string): Promise<{ error?: st
   const { error: profileError } = await admin.from("hrm_profiles").insert({
     id: user.id,
     company_id: invite.company_id,
+    branch_id: invite.branch_id,
     department_id: invite.department_id,
     designation_id: invite.designation_id,
     role: invite.role,

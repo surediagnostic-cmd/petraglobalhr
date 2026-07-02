@@ -1,6 +1,7 @@
 import { requireSuperAdmin } from "@/lib/auth/session";
 import { createClient } from "@/lib/supabase/server";
 import { createCompanyAction } from "./actions";
+import { VisitCompanyButton } from "./visit-company-button";
 import { Card, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,7 +10,7 @@ import { ActionForm } from "@/components/action-form";
 import { SubmitButton } from "@/components/submit-button";
 
 export default async function CompaniesPage() {
-  await requireSuperAdmin();
+  const profile = await requireSuperAdmin();
   const supabase = await createClient();
 
   // RLS (`hrm_companies_select_super_admin`) is what makes this cross-company
@@ -50,17 +51,27 @@ export default async function CompaniesPage() {
       </Card>
 
       <div className="space-y-2">
-        {(companies ?? []).map((c) => (
-          <Card key={c.id} className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-medium dark:text-slate-100">{c.name}</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
-                {staffCountByCompany.get(c.id) ?? 0} staff · {c.slug}
-              </p>
-            </div>
-            <Badge tone={c.is_active ? "success" : "neutral"}>{c.is_active ? "active" : "inactive"}</Badge>
-          </Card>
-        ))}
+        {(companies ?? []).map((c) => {
+          const isCurrent = c.id === profile.company_id;
+          return (
+            <Card key={c.id} className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium dark:text-slate-100">{c.name}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">
+                  {staffCountByCompany.get(c.id) ?? 0} staff · {c.slug}
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Badge tone={c.is_active ? "success" : "neutral"}>{c.is_active ? "active" : "inactive"}</Badge>
+                {isCurrent ? (
+                  <Badge tone="warning">Current</Badge>
+                ) : (
+                  <VisitCompanyButton companyId={c.id} label="Manage this company" />
+                )}
+              </div>
+            </Card>
+          );
+        })}
         {companies?.length === 0 && (
           <p className="text-sm text-slate-500 dark:text-slate-400">No companies yet.</p>
         )}

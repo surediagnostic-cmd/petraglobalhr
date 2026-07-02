@@ -15,6 +15,7 @@ export async function updateStaffAction(
     .from("hrm_profiles")
     .update({
       role: String(formData.get("role") ?? "staff"),
+      branch_id: String(formData.get("branch_id") ?? "") || null,
       department_id: String(formData.get("department_id") ?? "") || null,
       designation_id: String(formData.get("designation_id") ?? "") || null,
       reports_to: String(formData.get("reports_to") ?? "") || null,

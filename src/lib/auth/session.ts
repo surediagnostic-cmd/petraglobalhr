@@ -5,6 +5,7 @@ import type { Profile } from "@/lib/types";
 
 export interface SessionProfile extends Profile {
   company_name: string;
+  branch_name: string | null;
   department_name: string | null;
   designation_title: string | null;
 }
@@ -21,15 +22,16 @@ export async function getCurrentProfile(): Promise<SessionProfile | null> {
   const { data, error } = await supabase
     .from("hrm_profiles")
     .select(
-      "*, companies:hrm_companies!company_id!inner(name), departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title)",
+      "*, companies:hrm_companies!company_id!inner(name), branches:hrm_branches!branch_id(name), departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title)",
     )
     .eq("id", authData.user.id)
     .single();
 
   if (error || !data) return null;
 
-  const { companies, departments, designations, ...profile } = data as Profile & {
+  const { companies, branches, departments, designations, ...profile } = data as Profile & {
     companies: { name: string } | null;
+    branches: { name: string } | null;
     departments: { name: string } | null;
     designations: { title: string } | null;
   };
@@ -37,6 +39,7 @@ export async function getCurrentProfile(): Promise<SessionProfile | null> {
   return {
     ...profile,
     company_name: companies?.name ?? "",
+    branch_name: branches?.name ?? null,
     department_name: departments?.name ?? null,
     designation_title: designations?.title ?? null,
   };

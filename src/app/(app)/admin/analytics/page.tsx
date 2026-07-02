@@ -32,6 +32,7 @@ export default async function AnalyticsPage() {
 
   const [
     { data: staff },
+    { data: branches },
     { data: departments },
     { data: goals },
     { data: goalReports },
@@ -40,7 +41,8 @@ export default async function AnalyticsPage() {
     { data: appraisals },
     { data: activeManuals },
   ] = await Promise.all([
-    supabase.from("hrm_profiles").select("id, role, department_id, employment_status"),
+    supabase.from("hrm_profiles").select("id, role, branch_id, department_id, employment_status"),
+    supabase.from("hrm_branches").select("id, name"),
     supabase.from("hrm_departments").select("id, name"),
     supabase.from("hrm_goals").select("id, status"),
     supabase.from("hrm_goal_reports").select("id, review_status"),
@@ -61,6 +63,13 @@ export default async function AnalyticsPage() {
   for (const s of staff ?? []) {
     const label = s.department_id ? departmentNameById.get(s.department_id) ?? "Unknown" : "Unassigned";
     staffByDepartment.set(label, (staffByDepartment.get(label) ?? 0) + 1);
+  }
+
+  const branchNameById = new Map((branches ?? []).map((b) => [b.id, b.name]));
+  const staffByBranch = new Map<string, number>();
+  for (const s of staff ?? []) {
+    const label = s.branch_id ? branchNameById.get(s.branch_id) ?? "Unknown" : "Unassigned";
+    staffByBranch.set(label, (staffByBranch.get(label) ?? 0) + 1);
   }
 
   const staffByRole = { staff: 0, hr_manager: 0, md: 0 } as Record<string, number>;
@@ -133,6 +142,21 @@ export default async function AnalyticsPage() {
               </div>
             ))}
             {staffByDepartment.size === 0 && (
+              <p className="text-sm text-slate-500 dark:text-slate-400">No staff yet.</p>
+            )}
+          </div>
+        </Card>
+
+        <Card>
+          <CardTitle>Staff by branch</CardTitle>
+          <div className="mt-3 space-y-2">
+            {[...staffByBranch.entries()].map(([name, count]) => (
+              <div key={name} className="flex items-center justify-between text-sm">
+                <span className="text-slate-700 dark:text-slate-300">{name}</span>
+                <Badge>{count}</Badge>
+              </div>
+            ))}
+            {staffByBranch.size === 0 && (
               <p className="text-sm text-slate-500 dark:text-slate-400">No staff yet.</p>
             )}
           </div>

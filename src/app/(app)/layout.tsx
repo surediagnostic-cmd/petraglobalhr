@@ -1,13 +1,26 @@
 import { redirect } from "next/navigation";
 import { getCurrentProfile } from "@/lib/auth/session";
 import { isHrOrMd, roleLabel } from "@/lib/auth/roles";
+import { createClient } from "@/lib/supabase/server";
 import { NavLink } from "@/components/nav-link";
 import { SignOutButton } from "@/components/sign-out-button";
 import { Badge } from "@/components/ui/badge";
+import { VisitCompanyButton } from "./admin/companies/visit-company-button";
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const profile = await getCurrentProfile();
   if (!profile) redirect("/invite");
+
+  let homeCompanyName: string | null = null;
+  if (profile.home_company_id) {
+    const supabase = await createClient();
+    const { data } = await supabase
+      .from("hrm_companies")
+      .select("name")
+      .eq("id", profile.home_company_id)
+      .single();
+    homeCompanyName = data?.name ?? null;
+  }
 
   return (
     <div className="flex flex-1">
@@ -17,6 +30,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           <p className="text-xs text-slate-500 dark:text-slate-400">{profile.full_name}</p>
           <p className="text-xs text-slate-400 dark:text-slate-500">
             {profile.designation_title ?? roleLabel(profile.role)}
+            {profile.branch_name ? ` · ${profile.branch_name}` : ""}
           </p>
           {profile.is_super_admin && (
             <Badge tone="warning" className="mt-2">
@@ -24,6 +38,14 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             </Badge>
           )}
         </div>
+        {profile.home_company_id && (
+          <div className="mb-6 rounded-md border border-amber-300 bg-amber-50 p-3 text-xs dark:border-amber-800 dark:bg-amber-950">
+            <p className="mb-2 text-amber-800 dark:text-amber-300">
+              Visiting as MD{homeCompanyName ? ` — home company is ${homeCompanyName}` : ""}
+            </p>
+            <VisitCompanyButton companyId={profile.home_company_id} label="Return to my company" />
+          </div>
+        )}
         <nav className="space-y-1">
           <NavLink href="/manual">Manual & Handbook</NavLink>
           <NavLink href="/goals">Performance</NavLink>

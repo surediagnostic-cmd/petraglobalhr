@@ -8,6 +8,7 @@ import { requireHrOrMd } from "@/lib/auth/session";
 export async function createInviteAction(formData: FormData): Promise<{ error?: string }> {
   const profile = await requireHrOrMd();
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const branchId = String(formData.get("branch_id") ?? "") || null;
   const departmentId = String(formData.get("department_id") ?? "") || null;
   const designationId = String(formData.get("designation_id") ?? "") || null;
   const role = String(formData.get("role") ?? "staff");
@@ -20,6 +21,7 @@ export async function createInviteAction(formData: FormData): Promise<{ error?: 
     .insert({
       company_id: profile.company_id,
       email,
+      branch_id: branchId,
       department_id: departmentId,
       designation_id: designationId,
       role,

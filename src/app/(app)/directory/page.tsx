@@ -11,7 +11,9 @@ export default async function DirectoryPage() {
 
   const { data: staff } = await supabase
     .from("hrm_profiles")
-    .select("id, full_name, role, phone, departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title), manager:reports_to(full_name)")
+    .select(
+      "id, full_name, role, phone, branches:hrm_branches!branch_id(name), departments:hrm_departments!department_id(name), designations:hrm_designations!designation_id(title), manager:reports_to(full_name)",
+    )
     .order("full_name")
     .returns<
       {
@@ -19,6 +21,7 @@ export default async function DirectoryPage() {
         full_name: string;
         role: string;
         phone: string | null;
+        branches: { name: string } | null;
         departments: { name: string } | null;
         designations: { title: string } | null;
         manager: { full_name: string } | null;
@@ -35,6 +38,7 @@ export default async function DirectoryPage() {
               <p className="text-sm font-medium">{s.full_name}</p>
               <p className="text-xs text-slate-500">
                 {s.designations?.title ?? s.departments?.name ?? "Unassigned"}
+                {s.branches?.name && ` · ${s.branches.name}`}
                 {s.manager?.full_name && ` · reports to ${s.manager.full_name}`}
               </p>
               {s.phone && <p className="text-xs text-slate-400">{s.phone}</p>}
