@@ -16,14 +16,30 @@ export default async function ManualSectionPage({
 
   // If this profile isn't allowed to see the section, RLS returns zero rows
   // here rather than an error — notFound() is the correct response either way.
-  const { data: section } = await supabase
-    .from("hrm_manual_sections")
-    .select("id, section_number, title, subtitle, body, who_is_responsible, escalation_chain")
-    .eq("id", sectionId)
-    .eq("document_id", documentId)
-    .single();
+  const [{ data: section }, { data: allSections }] = await Promise.all([
+    supabase
+      .from("hrm_manual_sections")
+      .select("id, section_number, title, subtitle, body, who_is_responsible, escalation_chain")
+      .eq("id", sectionId)
+      .eq("document_id", documentId)
+      .single(),
+    // Scoped by the same RLS as the section itself, so prev/next only ever
+    // steps through sections this profile can actually see.
+    supabase
+      .from("hrm_manual_sections")
+      .select("id, section_number, title")
+      .eq("document_id", documentId)
+      .order("order_index"),
+  ]);
 
   if (!section) notFound();
+
+  const currentIndex = (allSections ?? []).findIndex((s) => s.id === sectionId);
+  const previousSection = currentIndex > 0 ? allSections![currentIndex - 1] : null;
+  const nextSection =
+    currentIndex >= 0 && currentIndex < (allSections?.length ?? 0) - 1
+      ? allSections![currentIndex + 1]
+      : null;
 
   return (
     <div className="max-w-3xl">
@@ -57,6 +73,27 @@ export default async function ManualSectionPage({
           )}
         </Card>
       )}
+
+      <div className="mt-6 flex items-center justify-between border-t border-slate-200 pt-4 text-sm dark:border-slate-800">
+        {previousSection ? (
+          <Link
+            href={`/manual/${documentId}/${previousSection.id}`}
+            className="text-slate-500 hover:underline dark:text-slate-400"
+          >
+            ← {previousSection.section_number} {previousSection.title}
+          </Link>
+        ) : (
+          <span />
+        )}
+        {nextSection && (
+          <Link
+            href={`/manual/${documentId}/${nextSection.id}`}
+            className="text-right text-slate-500 hover:underline dark:text-slate-400"
+          >
+            {nextSection.section_number} {nextSection.title} →
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
