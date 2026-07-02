@@ -1,0 +1,1457 @@
+
+
+
+SURE DIAGNOSTICS
+HEALTH SERVICES
+OPERATION MANUAL
+Comprehensive Edition — Updated & Revised
+
+Version
+Status
+Effective Date
+Document Owner
+2.0
+Active
+2026
+COO / MD
+
+
+Lagos & Osun, Nigeria
+CONFIDENTIAL — FOR INTERNAL USE ONLY
+
+Version Control Log
+
+Version
+Date
+Key Changes
+Approved By
+1.0
+2022
+Original manual published
+MD
+2.0
+2026
+Comprehensive revision: QMS added, regulatory compliance, hub-spoke logistics, finance controls, radiology protocols, KPI corrections, removal of third-party content, data privacy corrections
+COO / MD
+
+Table of Contents
+
+
+
+
+01
+General Information
+Attendance, discipline & daily operating rules
+1.1  Attendance & Punctuality
+Resumption time is 8:00 AM at all Sure Diagnostics centres. Punctuality reflects our commitment to patients and partners.
+
+Lateness Period
+Penalty
+Authority
+Up to 10 minutes
+Grace period — no penalty
+
+10 minutes – 1 hour
+₦500 deduction
+Branch Manager
+1 hour – 2 hours
+₦1,000 deduction
+Branch Manager
+2 hours – 3 hours
+₦1,500 deduction
+Branch Manager
+Over 3 hours
+Full day's pay deducted
+COO approval required
+
+Every staff member — full-time and part-time — must sign in AND sign out every working day. Failure to sign in is recorded as absenteeism, regardless of whether the staff member was physically present.
+
+1.2  Closing Procedure
+The last staff member on duty — supervised by the CSO/Admin Manager — is responsible for securing the facility. The following checks are mandatory before leaving:
+	•	Confirm all lights are off except security lights.
+	•	Confirm all sockets are switched off, EXCEPT: incubator, lab fridge, inverter, and all UPS units.
+	•	Confirm pumping machine is off and all taps are closed.
+	•	Put on the security lights.
+	•	Confirm all doors and windows are locked. Drop keys with the designated key-keeper.
+	•	The Manager must periodically verify the integrity of all facility keys.
+
+WHO IS RESPONSIBLE
+Branch Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+Zero security incidents (break-ins, unauthorised entry) per month
+KPI 2
+Zero lost assets per month
+KPI 3
+100% closing checklist completed daily
+ESCALATION: Branch Manager → COO → MD
+
+02
+Facility Management
+Cleanliness, safety, equipment & environmental standards
+2.1  Cleanliness & Appearance Standards
+A clean, well-organised facility is the physical expression of our commitment to quality. The Branch Manager is fully responsible for the facility condition at all times. Cleanliness is inspected and rated daily (1 = Very Poor to 5 = Excellent) in each of the following areas:
+
+Area
+Standard Required
+Responsible
+Compound & entrance
+Swept, washed, weeded, flowered; gutters clear
+Admin Manager
+Reception
+Floor washed, chairs wiped, computers cleaned, good smell
+CSO / FDO
+Laboratory
+Benches clean, waste segregated, equipment covered
+Head Lab Scientist
+Scan / Radiology room
+Machine covered when not in use, gel cleaned after each patient
+Head Radiographer
+X-ray room
+Radiation warning sign on door, floor clean, no clutter
+Head Radiographer
+Toilets
+Cleaned twice daily, pleasant smell, consumables stocked
+Admin Manager
+Generator area
+No trash, no fuel cans left visible, CO detector functional
+Admin Manager
+
+2.2  Equipment Management
+All clinical and administrative equipment must be properly operated, maintained, and shut down daily. Equipment misuse or negligence will result in penalties.
+Power Management Rules
+	•	All clinical equipment (analysers, ultrasound, X-ray, digitiser) must be on UPS or inverter. If on UPS, shut down immediately when power fails, then switch to alternative source.
+	•	Fridges and incubators must NEVER be run on a small (petrol) generator. Use PHCN or the large generator only.
+	•	Put off all lights, TVs, AC, and non-essential equipment at close of work.
+	•	Inverter charging socket remains ON after close. All other sockets OFF.
+	•	AC must only be switched on when the space is sealed (all windows and doors closed). Switch off before stopping the generator.
+	•	X-ray machine must be on a voltage stabiliser of at least 10 KVA. Use with large generator or PHCN only.
+
+Maintenance Scheduling
+	•	Each piece of equipment has an individual Equipment Maintenance Log. The Head of Unit updates it after every service, calibration, or repair.
+	•	Preventive maintenance must be conducted according to the manufacturer's schedule — not on breakdown. The COO approves all maintenance expenditure.
+	•	Any equipment fault or downtime must be reported to the Branch Manager within 30 minutes of discovery.
+
+WHO IS RESPONSIBLE
+Branch Manager / Admin Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+Facility cleanliness rating ≥ 4.0/5.0 in all areas (weekly inspection)
+KPI 2
+Zero equipment downtime due to operator error or missed maintenance
+KPI 3
+Equipment maintenance log 100% up to date
+KPI 4
+Zero assets lost or unaccounted for per month
+ESCALATION: Branch Manager → COO → MD
+
+03
+Customer Service & SurePACE
+Our patient experience philosophy and service standards
+3.1  The SurePACE Framework
+SurePACE — Personalised Amazing Customer Experience — is the core of everything we do at Sure Diagnostics. It ensures that every patient who walks through our doors leaves satisfied, reassured, and with a smile of hope. SurePACE has four components:
+
+Component
+What It Means
+1. Royal Reception
+Every patient is welcomed warmly from the gate and at the reception. They are made to feel Important, Welcomed, and Loved from the first second.
+2. Great Delivery
+Services are delivered accurately, promptly, and professionally. The patient is kept informed and comfortable throughout.
+3. Royal Departure
+The patient leaves feeling satisfied, appreciated, and with clarity on next steps (results timing, follow-up, doctor referral).
+4. Follow-Up
+Every patient receives a follow-up call or WhatsApp message within 24–48 hours. Partners are called to check on referred patients and whether results aided management.
+
+3.2  What We Owe Our Customers
+Accuracy
+Patients and partners expect reliable, trustworthy results. Every result you produce must be verified and accurate. When in doubt, seek a second opinion from a senior colleague or the Pathologist/Radiologist before release.
+Availability
+Patients expect us to be waiting for them — not the other way around. No patient should wait more than 30 minutes for their service to begin under normal circumstances. In emergencies, there is no waiting — prioritise immediately and inform other patients politely.
+Partnership
+Build professional bonds with both patients and referring partners. Call all patients within 24–48 hours of their visit to ask after their health. Call referring doctors to confirm that your results helped in patient management. This is what separates a great diagnostic centre from a good one.
+Advice
+Share clinically appropriate tips with different patient categories — antenatal women, diabetic patients, hypertensives. Help patients stay positive and informed. Never prescribe drugs, but guide patients back to their doctors with the information they need.
+
+3.3  The 20 SurePACE Service Standards
+All front-desk and clinical staff are required to deliver these 20 standards on every patient visit:
+	•	Greet every patient warmly at the gate (use 'Sir' / 'Ma').
+	•	Greet again warmly at the reception desk.
+	•	Offer a cup of water or fruit juice within 2 minutes of arrival. (Sachet water is not acceptable.)
+	•	Complete registration within 5 minutes of arrival.
+	•	Give 2 sweets to every child patient.
+	•	Check on waiting patients every 5 minutes and reassure them.
+	•	Always inform a waiting patient why they are waiting and provide an estimated time.
+	•	Emergency patients are seen immediately — no waiting. Politely explain to other patients.
+	•	All patients should be fully attended to within 30 minutes of arrival, all things being equal.
+	•	Attend to all patients cheerfully and professionally.
+	•	Make a follow-up call within 24 hours of the patient's visit.
+	•	Deliver results electronically within 20 minutes of result release (no extra charge).
+	•	Home sample collection available — dispatch within 4 hours of booking (extra charge applies).
+	•	Send a WhatsApp/SMS notification when a result is ready for collection.
+	•	Ensure the reception always smells clean and fresh.
+	•	Ensure the toilet smells clean and fresh.
+	•	Maintain professional decoration and welcoming ambiance inside and outside the facility.
+	•	Play soft music or health education content in the waiting area (ask patients if comfortable).
+	•	Smile at every patient — always.
+	•	Ensure every result is valid, accurate, and error-free before release.
+
+3.4  Registration & Payment Protocol
+All patient interactions begin at the front desk. The FDO/CSO must follow this protocol exactly:
+	•	Confirm the tests or investigations the client requires. If the client has a request form, confirm it matches their stated reason for visiting.
+	•	If uncertain about what tests to recommend, direct the patient to the Lab Scientist, Radiographer, or Doctor for a brief consultation before registration.
+	•	Compute the price and communicate it clearly to the patient before proceeding.
+PAYMENT POLICY: Full payment (100%) is required before any service is rendered. Part-payment is NOT permitted under any circumstances. The only exception is a written approval from the Branch Manager and COO, which must be logged in the Balance Receivables Register with a mandatory repayment date.
+	•	Register ALL patients on LabSmart LIS with all fields correctly completed. No patient may be seen without a valid LIS registration number on their receipt.
+	•	If LIS is temporarily unavailable, use the physical Book Register as a backup (include the LIS ID once restored). Notify the Admin Manager and COO immediately.
+	•	Issue receipts in at least duplicate: one copy to the patient (to present to the service provider), one copy retained by the FDO.
+	•	For discount requests: the patient must be directed to the Admin Manager. Only Branch Managers may authorise discounts (maximum 5%, cumulative monthly cap of ₦5,000 per manager). Discounts may NOT be applied after payment has been made.
+	•	After payment, direct the patient to the appropriate service provider with their request form and receipt copy.
+
+CASH POLICY: Cash payments are NOT accepted at any Sure Diagnostics centre. All payments must be made by POS, bank transfer to approved Sure Diagnostics accounts, or approved digital platforms only. Any staff member accepting cash without written MD authorisation is subject to immediate disciplinary action.
+
+3.5  Result Release Protocol
+Results must be released only after full verification by the relevant clinical staff. The following options are available to every patient:
+	•	Electronic delivery within 20 minutes of result release (no charge).
+	•	Physical delivery to the requesting doctor/provider within 24 hours (extra charge applies).
+	•	Patient collects in person — confirm collection time with technical staff and add 15–30 minutes buffer before communicating to patient.
+
+The CSO/FDO must check the following before releasing any result: correct patient name, age, gender, date, referring doctor details, and that all fields on the result form match the LIS record.
+All results must be typed, signed, printed, and stamped with the official Sure Diagnostics stamp on a Sure Report Sheet letterhead. Handwritten results are not acceptable.
+Maintain a Results Diary: outstanding results must be logged and checked at the start of every working day. No patient should arrive to collect results and find them not ready without having been called in advance. Penalty for CSO/AM: ₦1,000.
+
+WHO IS RESPONSIBLE
+CSO / FDO / Branch Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+% patients registered and billed correctly on LIS (target: 100%)
+KPI 2
+Average TAT from registration to result release (target: within agreed service standards)
+KPI 3
+Customer satisfaction score (target: ≥ 4.0/5.0)
+KPI 4
+% follow-up calls made within 24–48 hours (target: 100%)
+KPI 5
+Zero result errors or incorrect releases per month
+ESCALATION: CSO → Branch Manager → COO
+
+04
+Laboratory Operations
+Sample collection, processing, quality control & result release
+4.1  Patient Reception in the Laboratory
+The phlebotomist or lab technician must apply the same SurePACE principles as the reception desk. Every patient entering the laboratory must be greeted warmly and made to feel comfortable.
+	•	Welcome the patient warmly: 'Welcome Sir/Ma.'
+	•	Confirm patient identity against the request/booking form and LIS record.
+	•	Confirm payment by checking the receipt copy. Collect the lab copy of the receipt.
+	•	Inform the patient of the procedure, what to expect, and when results will be ready.
+	•	Maintain patient privacy and confidentiality at all times.
+	•	Recommend additional clinically relevant tests where appropriate — but always inform the referring partner before adding tests to referred patients.
+
+4.2  Sample Collection Standards
+All samples must be collected according to the specific protocol for each test type. 'Always follow best practices' is not sufficient — specific procedures are required. The following standards apply to all collections:
+	•	Use the correct collection tube for each test (EDTA for FBC, SST/plain for biochemistry, citrate for coagulation, etc.).
+	•	Label all sample tubes at the point of collection with: patient name, LIS number, date and time of collection, and type of sample.
+	•	An unlabelled tube must never be processed. It is rejected immediately.
+	•	Perform venepuncture using aseptic technique. Wear gloves at all times.
+	•	Inform the patient of what you are doing and what to expect.
+	•	Document all collected samples in the Lab Record Book before transferring to the processing area.
+
+SHARPS SAFETY: Never re-cap needles using the two-hand technique. Use the single-hand scoop method or a safety device. Dispose of all sharps immediately after use into an approved yellow sharps bin. NEVER leave sharps on benches or in non-sharps bins.
+
+4.3  Sharps Injury Protocol
+If a sharps injury (needlestick, cut, splash) occurs, follow these steps immediately:
+	•	Do not panic. Allow the wound to bleed slightly by squeezing gently under running water. Do NOT suck the wound.
+	•	Wash thoroughly with soap and running water for at least 2 minutes.
+	•	Report to the Branch Manager immediately. Log the incident in the Sharps Injury Register.
+	•	The Branch Manager arranges baseline HIV/HBV/HCV blood testing for the injured staff member within 2 hours.
+	•	The COO and HR Manager are notified. The staff member is referred to an occupational health physician for post-exposure prophylaxis (PEP) assessment within 24 hours.
+	•	The source patient is counselled and tested where consent is obtained.
+	•	The Sharps Injury Register is reviewed monthly by the COO.
+
+4.4  Sample Rejection Criteria
+The following conditions mandate immediate sample rejection. The FDO/CSO must be notified within 15 minutes so the patient can be managed. Rejected samples are logged in the Sample Rejection Register.
+
+Rejection Criterion
+Action Required
+Who Notifies Patient
+Unlabelled or mislabelled sample
+Do not process. Log rejection.
+Lab Scientist
+Haemolysed sample (visible)
+Reject. Arrange recollection.
+Lab Scientist
+Insufficient sample volume
+Reject. Inform FDO for recollection.
+FDO / CSO
+Wrong container / anticoagulant
+Reject. Re-collect in correct tube.
+Lab Scientist
+Clotted anticoagulated sample
+Reject. Re-collect.
+Lab Scientist
+Temperature breach (cold chain)
+Reject. Log incident. Re-collect.
+Branch Manager
+Sample without request form
+Hold. Do not process. FDO to resolve.
+FDO / CSO
+
+4.5  Quality Control (IQC) Procedure
+Internal Quality Control (IQC) must be performed at the start of every analytical session, and after any reagent change, equipment maintenance, or power interruption. NO patient results are released until IQC passes.
+	•	Use commercial control materials at two levels (normal and pathological) for every analyser.
+	•	Plot control values on a Levey-Jennings chart in the IQC Log Book.
+	•	Apply Westgard rules. Reject the analytical run if any of the following are violated: 1-3s (one control exceeds ±3 SD), 2-2s (two consecutive controls exceed ±2 SD), R-4s (range between two controls exceeds 4 SD), 4-1s (four consecutive controls exceed ±1 SD in same direction).
+	•	On IQC failure: repeat the control run. Check reagent integrity and calibration. If failure persists, take the analyser offline and escalate to the Hub Lab Head.
+	•	Document ALL IQC results (pass and fail) in the daily QC register. Incomplete QC records are a non-conformance.
+
+4.6  External Quality Assurance (EQA)
+Sure Diagnostics must be enrolled in at least one nationally or internationally recognised EQA/Proficiency Testing programme appropriate to our test menu. Recommended schemes: RECMEL (Nigeria), UKNEQAS, or a FMLS-affiliated national programme.
+	•	EQA samples must be processed identically to patient samples — no special handling.
+	•	EQA results are submitted by the Hub Lab Head within the scheme's deadline.
+	•	EQA performance reports are reviewed at the monthly Clinical Meeting.
+	•	Any unsatisfactory EQA result triggers a CAPA (Corrective and Preventive Action) within 7 days.
+
+4.7  Critical Values (Panic Values)
+A critical value is a result so far outside the reference range that it may represent a life-threatening condition. Critical values must be communicated to the requesting clinician or patient within 30 minutes of verification — without exception.
+
+Parameter
+Critical Low
+Critical High
+Action
+Sodium (Na+)
+< 120 mmol/L
+> 160 mmol/L
+Call immediately
+Potassium (K+)
+< 2.5 mmol/L
+> 6.5 mmol/L
+Call immediately
+Glucose (random)
+< 2.2 mmol/L
+> 33 mmol/L
+Call immediately
+Haemoglobin
+< 50 g/L
+> 200 g/L
+Call immediately
+Creatinine
+—
+> 1000 micromol/L
+Call immediately
+Platelets
+< 50 x 10^9/L
+> 1000 x 10^9/L
+Call immediately
+
+Critical Value Communication Protocol:
+	•	Lab scientist identifies critical value during verification.
+	•	Do not release through normal channels. Call the requesting doctor directly. Document time of call.
+	•	If doctor unreachable after 15 minutes, call the patient directly.
+	•	Document in the Critical Results Log: time identified, time of call, person notified, their response.
+	•	Flag result on LabSmart LIS with 'CRITICAL' tag before release.
+	•	If no contact within 30 minutes, escalate to Branch Manager and COO immediately.
+
+4.8  Result Production & Release
+All results must be produced using LabSmart LIS by the responsible lab scientist or technician.
+	•	Results must be accurate, complete, and error-free. The scientist is personally responsible for every result they release.
+	•	Positive results must be reviewed and cleared by a senior colleague before release. Pathologist review is mandatory for all histopathology and cytology reports.
+	•	Lab scientists may recommend additional tests in the report where clinically appropriate.
+	•	All results must be typed, signed, printed on Sure Report Sheet letterhead, and stamped with the official Sure Diagnostics stamp.
+	•	Staff must NOT discuss results with patients coming from referring partners. Direct them politely to their doctor for interpretation.
+	•	For private patients who enquire: brief, professional discussion is acceptable, but always direct them back to their doctor or health provider.
+	•	Never prescribe drugs to any patient.
+
+WHO IS RESPONSIBLE
+Head Lab Scientist / Branch Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+100% correct results — zero result errors or incorrect releases
+KPI 2
+IQC pass rate >= 98% of all analytical sessions
+KPI 3
+Sample rejection rate < 3% per month
+KPI 4
+Critical value communication within 30 minutes (target: 100%)
+KPI 5
+Lab Record Book 100% up to date
+ESCALATION: Lab Scientist → Head Lab Scientist → COO → Pathologist (clinical)
+
+05
+Radiology Operations
+Ultrasound, X-ray, ECG — protocols, safety & quality standards
+5.1  Patient Reception in Radiology
+The Radiographer applies SurePACE standards to every patient. Every patient entering the scan or X-ray room must be greeted warmly, have their identity confirmed, and be informed of the procedure before it begins.
+	•	Welcome the patient warmly and confirm identity against the booking form and LIS record.
+	•	Confirm payment by checking the receipt copy.
+	•	Explain the procedure clearly — what it involves, whether it may be uncomfortable, and when results will be ready.
+	•	Obtain written informed consent for invasive procedures (e.g., transvaginal scan, hysterosalpingography).
+	•	Maintain strict patient privacy throughout — use screens, close doors, and have a female chaperone present for sensitive examinations.
+
+5.2  Ultrasound — Patient Preparation Standards
+The following preparation instructions must be communicated to patients before their scan appointment. Failure to prepare correctly may require rescheduling, which reflects poorly on the centre.
+
+Scan Type
+Patient Preparation
+Special Notes
+Abdominal / Hepatobiliary
+4–6 hours fasting (no food, water, or gum)
+Essential for gallbladder visualisation
+Pelvic (transabdominal)
+Full bladder — drink 4–6 glasses of water 1 hour before; do not void
+Confirm bladder fullness before scanning
+Transvaginal (TVS)
+Bladder empty
+Written consent required; female chaperone mandatory
+Obstetric (1st trimester)
+Full bladder or as directed
+Confirm gestational age on request form
+Obstetric (2nd / 3rd trimester)
+No special preparation
+Document biometry systematically
+Thyroid / Neck / Breast
+No preparation required
+Document which side is symptomatic
+Scrotal / Testicular
+No preparation required
+Document bilaterally
+Musculoskeletal (MSK)
+No preparation required
+Confirm laterality carefully; image bilaterally for comparison
+
+5.3  Radiation Safety (X-Ray) — ALARA Principle
+All X-ray procedures must comply with the ALARA principle: As Low As Reasonably Achievable. Every exposure must be the minimum necessary to produce a diagnostically acceptable image. These rules are mandatory and non-negotiable.
+
+RADIATION SAFETY IS A LEGAL REQUIREMENT UNDER NAEC GUIDELINES. Violations expose both the staff member and the business to criminal liability.
+
+	•	No person other than the patient — and an essential helper wearing a lead apron — may be in the X-ray room during an exposure. All other staff must be behind the protective barrier.
+	•	The radiographer operates the X-ray machine from the control position with the protective barrier between them and the X-ray tube.
+	•	Pregnant staff must not operate X-ray equipment or remain in the X-ray room during any exposure. Pregnancy must be declared to the Branch Manager immediately upon confirmation.
+	•	Pregnant patients: the requesting clinician must be consulted before proceeding. X-ray is only performed where the clinical benefit outweighs the risk, and the abdomen must be shielded.
+	•	All radiology staff must wear a personal dosimeter badge at all times. Badges are collected monthly and sent for reading. Any reading above the monthly limit triggers an immediate investigation.
+	•	Radiation safety warning signs must be posted on the X-ray room door. The door must be closed and latched during all exposures.
+
+5.4  Teleradiology Workflow
+All X-ray films requiring radiologist reporting and all ECGs requiring cardiologist reporting are transmitted via the Sure approved teleradiology channel. No imaging result is released without a specialist report.
+	•	Radiographer performs the procedure and produces the digital image (DICOM format via digitiser).
+	•	Image is transmitted via the approved, encrypted channel to the contracted radiologist. Do NOT use personal WhatsApp accounts for clinical image transmission.
+	•	Log all transmissions in the Teleradiology Dispatch Register: patient name, LIS number, time sent.
+	•	Turnaround expectations: Routine = within 12 hours. Urgent = within 2 hours. Radiographer follows up proactively if TAT is not met.
+	•	On receipt of report, upload to LabSmart LIS against the patient record.
+	•	Notify FDO/CSO that the report is ready. Standard result release protocol then applies.
+	•	Physical films are filed in the patient folder and retained for 7 years.
+
+5.5  Image Quality & Reject / Repeat Analysis
+	•	Every rejected or repeated image must be logged in the Image Reject Register: date, patient LIS number, body part, reason (positioning, exposure, movement, artefact), and whether a repeat was taken.
+	•	Monthly reject rate is calculated: (rejected images / total images) x 100. Target: < 5% per month.
+	•	Monthly reject analysis is presented at the Clinical Meeting. Recurring patterns indicate training or equipment issues.
+
+5.6  Result Production & Release (Radiology)
+	•	All radiology reports must be produced using LabSmart LIS by the radiographer or sonographer.
+	•	ECG results must be reported by the contracted cardiologist. X-ray films must be reported by the contracted radiologist. No ECG or X-ray result is released based on the radiographer's assessment alone.
+	•	Radiographers and sonographers may note their technical findings but must not make a diagnostic report without specialist sign-off.
+	•	All results must be typed, signed, printed on Sure Report Sheet letterhead, and stamped with the official Sure Diagnostics stamp.
+
+WHO IS RESPONSIBLE
+Head Radiographer / Branch Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+Radiologist / cardiologist report TAT compliance >= 95% of all cases
+KPI 2
+X-ray image reject rate < 5% per month
+KPI 3
+Dosimeter badge compliance: 100% of radiology staff badged and readings recorded monthly
+KPI 4
+100% of TVS and invasive procedures documented with written patient consent
+KPI 5
+Zero radiation safety incidents per quarter
+ESCALATION: Radiographer → Head Radiographer → COO → Radiologist (clinical)
+
+06
+Hub-Spoke Logistics & Sample Transport
+Chain of custody, cold chain, TAT standards & inter-site operations
+6.1  Network Architecture
+Sure Diagnostics operates a hub-and-spoke model. The Hub centre (Ilasa) performs complex, capital-intensive testing and houses specialist consultants. Spoke centres serve as patient-facing collection and basic-testing points. All samples requiring advanced processing travel to the Hub via a controlled, documented logistics chain.
+
+Centre Type
+Responsibilities
+Hub (Ilasa)
+Complex biochemistry, immunoassay, molecular, histopathology, and cytology testing; centralised radiologist and pathologist reporting; logistics coordination; master reagent warehouse; network quality oversight
+Spokes (Palm Avenue, OAuth, future sites)
+Patient registration, billing, and reception; sample collection; point-of-care and rapid testing; basic ultrasound and ECG where equipment is sited; result distribution to patients and referring doctors
+
+6.2  TAT Standards by Sample Category
+Sample / Test Type
+Collection to Dispatch
+Spoke to Hub
+Result to Patient
+Haematology (FBC)
+<= 30 min
+Same-day run
+4–6 hours
+Biochemistry (LFT, RFT, FBS)
+<= 45 min
+Same-day run
+4–6 hours
+Hormones / Immunoassay
+<= 1 hour
+Same-day or next-day
+24 hours
+Microbiology (culture)
+<= 2 hours
+Same-day dispatch
+48–72 hours
+Histopathology / Biopsy
+Fixed per protocol
+Same-day dispatch
+5–7 working days
+Cytology (FNAC / PAP)
+Fixed per protocol
+Same-day dispatch
+3–5 working days
+
+6.3  Chain of Custody Protocol
+Every sample that leaves a spoke must be documented before departure. No sample moves between sites without a completed chain of custody.
+	•	Lab scientist completes the Sample Transfer Form (STF): patient name, LIS number, tests requested, sample type, collection time, temperature, and any special handling notes.
+	•	Samples placed in clearly labelled, sealed biohazard bags with the STF and a receipt copy inside.
+	•	Cold chain samples placed in validated cool boxes pre-chilled to 2–8 degrees C (or dry ice for frozen samples). Temperature logged at point of packing.
+	•	Dispatch rider signs the Spoke Dispatch Register: date, time, number of samples, cool-box temperature at departure, and destination.
+	•	Upon arrival at Hub, receiving scientist signs the Hub Receipt Register: arrival time, packaging condition, temperature on receipt, and any discrepancies noted.
+	•	Rejected samples (haemolysed, wrong temperature, incorrect container, unlabelled, or insufficient volume) are logged on the Sample Rejection Form. The originating spoke is notified within 30 minutes.
+	•	Rejected samples trigger free recollection at the originating spoke within 2 hours where clinically possible.
+
+6.4  Cold Chain Requirements
+Sample / Test
+Storage Temp
+Transport Temp
+Max Time in Transit
+Whole blood (FBC)
+Room temp
+Room temp
+4 hours
+Serum (biochemistry)
+2–8 deg C
+Cool box 2–8 deg C
+8 hours
+Hormones / EIA
+2–8 deg C
+Cool box 2–8 deg C
+24 hours
+Urine (M/C/S)
+2–8 deg C
+Cool box 2–8 deg C
+4 hours
+Histology (formalin-fixed)
+Room temp
+Sealed and labelled
+48 hours
+Molecular / PCR tests
+-20 deg C
+Dry ice
+24 hours
+
+WHO IS RESPONSIBLE
+Hub Lab Head / Branch Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+% of samples transported within TAT standard (target: >= 95%)
+KPI 2
+Sample rejection rate at Hub for transit-related reasons (target: < 2%)
+KPI 3
+Cold chain temperature breach incidents (target: 0 per month)
+KPI 4
+100% of inter-site transfers with completed chain-of-custody documentation
+ESCALATION: Spoke Manager → Hub Lab Head → COO → MD
+
+07
+Quality Management System (QMS)
+Non-conformance, CAPA, audits & continuous improvement
+7.1  QMS Philosophy
+Sure Diagnostics is committed to producing results that are accurate, reliable, and clinically actionable every time. Our QMS governs every process from sample collection to result release. Quality is not an audit function — it is the way we work. Every staff member is a quality officer.
+
+7.2  Non-Conformance & CAPA System
+A Non-Conformance (NC) is any deviation from our documented procedures, quality standards, or expected clinical outcomes. All NCs — regardless of severity — must be recorded, investigated, and resolved.
+
+NC Classification
+Definition
+Response Time
+Minor
+Single procedural deviation with no patient impact
+Correct within 7 days
+Major
+Systemic failure or repeated procedural deviation
+CAPA within 14 days
+Critical
+Patient safety risk or near-miss
+Immediate escalation; CAPA within 48 hours
+
+CAPA Process:
+	•	NC identified — staff member completes Non-Conformance Report (NCR) within 24 hours.
+	•	Branch Manager reviews and classifies: Minor, Major, or Critical.
+	•	Root cause analysis performed: 5-Why method for Minor; fishbone diagram for Major/Critical.
+	•	Corrective action defined with responsible person, resources needed, and completion deadline.
+	•	Action implemented and verified by Branch Manager or COO.
+	•	NCR closed only after effectiveness is confirmed. Critical NCs reviewed at the monthly Clinical Meeting.
+
+7.3  Audit Schedule
+Audit Type
+Frequency
+Conducted By
+Output
+Facility cleanliness & safety
+Weekly
+Branch Manager
+Facility Audit Score (1–5)
+Lab QC records review
+Monthly
+Hub Lab Head
+QC Compliance Report
+Sample rejection rate review
+Monthly
+Hub Lab Head
+Rejection Rate Report
+Finance & cash controls
+Monthly
+COO / Finance Manager
+Finance Audit Report
+Inventory accuracy check
+Monthly
+Admin Manager
+Inventory Variance Report
+Full branch QMS audit
+Quarterly
+COO + External Reviewer
+Branch QMS Scorecard
+Network-wide QMS audit
+Annually
+External Auditor
+Annual QMS Report
+
+WHO IS RESPONSIBLE
+Hub Lab Head / COO (QMS Custodians)
+KEY PERFORMANCE INDICATORS
+KPI 1
+IQC pass rate >= 98% of all analytical runs
+KPI 2
+EQA performance score >= 85% on all enrolled schemes
+KPI 3
+Sample rejection rate < 3% per month per site
+KPI 4
+100% of NCRs submitted within 24 hours of incident
+KPI 5
+CAPA closure within agreed deadline (target: 100%)
+ESCALATION: Lab Scientist → Hub Lab Head → COO → MD
+
+08
+Account & Finance Management
+Daily controls, approval matrix, P&L reporting & HMO billing
+8.1  Payment Policy (Definitive)
+CASH POLICY (DEFINITIVE): Cash payments are NOT accepted at any Sure Diagnostics centre. All payments must be made via POS, bank transfer to approved Sure Diagnostics bank accounts, or approved digital payment platforms only. Any staff member accepting cash without written MD authorisation is subject to immediate disciplinary action up to and including termination.
+
+Approved bank accounts for each branch:
+	•	Ilasa Branch: Access Bank — Account No. 0056564616 — Sure Diagnostic Health Service
+	•	Palm Avenue Branch: Access Bank — Account No. 0059514462 — Sure Diagnostic Health Service
+	•	Sure OAuth Branch: KUDA Bank — Account No. 3000091948 — Sure Diagnostic Health Service
+
+For bank transfers: the payer must send evidence of payment to the approved branch WhatsApp number. The FDO/CSO must confirm receipt with the Finance Manager before releasing any service.
+
+8.2  Financial Approval Authority Matrix
+Transaction Type
+Admin Manager
+Branch Manager
+COO
+MD
+Petty cash disbursement
+<= N5,000
+<= N20,000
+<= N50,000
+Any amount
+Vendor purchase / PO
+Recommend only
+<= N50,000
+<= N200,000
+> N200,000
+Discount approval
+Not authorised
+Max 5% / N5k pm
+Up to 15%
+Any
+Refund authorisation
+Not authorised
+Recommend to COO
+<= N50,000
+Any amount
+Staff salary advance
+Not authorised
+Not authorised
+<= 50% monthly salary
+Any
+Capital expenditure
+Not authorised
+Not authorised
+Not authorised
+All capex
+HMO credit extension
+Not authorised
+Not authorised
+<= 30 days
+> 30 days
+
+8.3  Daily Financial Controls
+Opening Reconciliation (every morning)
+	•	Admin Manager confirms POS terminal is connected and operational. Print overnight settlement report.
+	•	Confirm all pending bank transfer notifications from the prior day against the branch bank account.
+	•	Pull LabSmart LIS daily summary for the prior day and match against total receipts issued.
+	•	Any variance between LIS billings and confirmed receipts is flagged immediately to the COO.
+
+Closing Reconciliation (every evening)
+	•	FDO/CSO compiles the Daily Cash and Transfer Report (DCTR): total POS receipts, total transfers confirmed, total patients registered, and total amount billed on LabSmart.
+	•	Admin Manager verifies DCTR against LIS summary and signs off.
+	•	All POS receipts and proof-of-transfer screenshots filed in the daily finance folder.
+	•	DCTR submitted to Finance Manager and COO by 9:00 PM.
+	•	Any variance of N1,000 or more requires a written explanation filed with the DCTR.
+
+8.4  Branch Profit & Loss Reporting
+Each branch must submit a monthly Branch P&L Report by the 3rd working day of the following month. This is mandatory. The Finance Manager consolidates branch P&Ls into the company-wide management accounts.
+
+P&L Line Item
+Data Source
+Revenue — OOP / Walk-in
+LabSmart LIS monthly summary
+Revenue — HMO / Insurance
+HMO payment advices received
+Revenue — Corporate
+Corporate invoices raised
+Cost of Reagents & Consumables
+SD-IMS monthly depletion report
+Staff costs (salaries + allowances)
+HR payroll summary
+Utilities (generator fuel, PHCN)
+Actual invoices and meter readings
+Equipment maintenance & repairs
+Maintenance log and invoices
+Outsourced test costs (referral labs)
+External lab invoices
+Marketing & commission paid
+Commission payment records
+Admin overheads
+Petty cash logs and invoices
+EBITDA (calculated)
+Revenue minus all costs above
+
+8.5  HMO & Insurance Billing
+HMO billing is a critical revenue assurance activity. The Finance Manager owns this process.
+	•	By the 25th of each month: Admin Manager compiles all HMO patient encounters from LabSmart, grouped by HMO.
+	•	Finance Manager generates invoices in Zoho Books with itemised services, HMO-specific pricing, and capitation deductions where applicable.
+	•	Invoices submitted to each HMO by the last working day of the month.
+	•	Finance Manager maintains an HMO Receivables Tracker: HMO name, invoice amount, submission date, expected payment date, and actual receipt date.
+	•	Any invoice unpaid after 30 days triggers a follow-up call from the Finance Manager.
+	•	Any invoice unpaid after 60 days is escalated to the COO for relationship intervention.
+
+Claim Denial Management:
+	•	All denied claims logged in the HMO Denial Register within 48 hours of receipt.
+	•	Denial reasons categorised: pre-authorisation failure, coding error, duplicate claim, exclusion, or patient eligibility issue.
+	•	Coding/documentation errors corrected and resubmitted within 7 working days.
+	•	Disputed denials (where the claim is valid) escalated in writing to the HMO within 14 days.
+
+8.6  Anti-Fraud Controls
+Ghost Patient Prevention
+	•	Every registered patient must have a valid LabSmart LIS number on their receipt. No LIS number = no valid transaction.
+	•	Monthly audit: compare total patients on LIS against total receipts issued. Any variance requires a written explanation.
+	•	COO conducts unannounced cross-checks of branch registers at least once per quarter.
+Discount Abuse Prevention
+	•	Discount register submitted monthly to COO. Any manager exceeding N5,000 cumulative discount per month must provide written justification approved by the COO.
+	•	Discounts may NOT be applied after a patient has already paid.
+Refund Controls
+	•	All refunds processed by bank transfer to the patient's account only. No cash refunds under any circumstances.
+	•	All refund authorisations signed by both the Branch Manager (recommend) and COO (approve).
+Vendor Payment Controls
+	•	No single person may raise a purchase request, approve it, and confirm receipt. These three functions are always separated.
+	•	Minimum two vendor quotes for any purchase above N10,000.
+	•	Payment made only after goods or services are received and verified by an independent person.
+
+8.7  Procurement Process
+	•	The Head of Unit / Admin Manager (HOU/AM) verifies the need and circumstances.
+	•	HOU/AM negotiates with at least 2 approved vendors and obtains the best price before raising a request.
+	•	A formal Requisition/Request Form is submitted to the MD/COO with the final supplier invoice.
+	•	Response to the request must be given within 24–48 hours by the Finance team or COO.
+	•	On approval, AM oversees delivery and payment processing.
+	•	Supplied goods verified by the HOU and Finance/Audit before payment is released.
+	•	For consumable supply: AM ensures proper storage and documentation in SD-IMS.
+	•	Payment vouchers/invoices generated for all purchases. All transactions recorded on Zoho Books immediately.
+	•	Vendor payment terms: within 4–6 weeks of delivery, except pay-on-delivery agreements.
+
+WHO IS RESPONSIBLE
+Finance Manager / COO
+KEY PERFORMANCE INDICATORS
+KPI 1
+Daily reconciliation completed: 100% of working days
+KPI 2
+HMO invoices submitted by last working day of month: 100%
+KPI 3
+HMO receivables outstanding > 60 days: < 10% of total HMO revenue
+KPI 4
+Branch P&L submitted by 3rd working day of new month: 100%
+KPI 5
+Zero material finance variances in monthly audit
+ESCALATION: Finance Manager → COO → MD
+
+09
+Regulatory Compliance & Governance
+MLSCN, NAFDAC, NDPR, IPC, radiation safety & waste management
+9.1  Regulatory Overview
+Sure Diagnostics operates under Nigerian law and is subject to multiple regulatory bodies. Compliance is mandatory. Non-compliance can result in facility closure, licence revocation, fines, and personal criminal liability for directors and staff.
+
+Regulator
+Scope
+Key Obligation
+Renewal
+MLSCN
+Medical Lab Science Council of Nigeria
+Annual facility and practitioner licences
+Annual (Jan)
+NAFDAC
+Food & Drug Administration
+Approval for imported reagents and consumables
+Per importation
+FMOH / State MoH
+Ministry of Health
+Facility registration and renewal
+Every 2–3 years
+NITDA / NDPR
+Nigeria Data Protection Regulation
+Patient data protection, consent, and storage
+Ongoing
+NAEC
+Nigeria Atomic Energy Commission
+Radiation safety compliance for X-ray
+Ongoing
+NESREA
+Nat. Environmental Standards & Regulations
+Medical waste segregation and certified disposal
+Ongoing
+
+9.2  MLSCN Licence Management
+	•	The COO maintains a Licence Tracker for all MLSCN licences — facility and individual practitioners — with renewal dates and responsible persons.
+	•	Renewal process begins 90 days before expiry. Finance Manager budgets for renewal fees each Q4.
+	•	Any scientist or technician whose MLSCN licence lapses must be stood down from bench work immediately until the licence is reinstated.
+	•	Facility licence must be displayed at the reception desk of every centre.
+
+9.3  Patient Data Protection (NDPR)
+All patient data — names, contact details, diagnoses, and test results — is protected health information under the Nigeria Data Protection Regulation (NDPR) 2019. Breach of patient data is a criminal offence. Staff who share patient data without authorisation will face immediate disciplinary action and may be reported to the relevant authority.
+
+Staff obligations under NDPR:
+	•	Patient records may not be shared with third parties without written patient consent, except to the requesting clinician.
+	•	Results must never be discussed in the open reception area or in the hearing of other patients.
+	•	LabSmart LIS access is password-protected and role-limited. Passwords must never be shared between staff members.
+	•	Patient records on paper must be stored in locked cabinets. Records older than 7 years may only be disposed of by certified destruction.
+	•	Any suspected data breach must be reported to the COO within 24 hours.
+
+DIGITAL CREDENTIALS: Login credentials for all Sure Diagnostics platforms (Zoho, social media, LIS, financial systems) must be stored in the approved password manager, accessible only to authorised staff. Credentials must NEVER be written in this manual, WhatsApp messages, or any unsecured document. All credentials referenced in previous versions of this manual have been updated.
+
+9.4  Infection Prevention & Control (IPC)
+IPC is a patient safety and staff safety obligation. All clinical staff must complete IPC training on commencement of employment and annually thereafter.
+Standard Precautions — Apply to ALL Patients, ALL the Time
+	•	Hand hygiene: wash with soap and water or use alcohol-based hand rub before and after every patient contact, and after removing gloves.
+	•	PPE: gloves for all blood/body fluid contact; lab coat always worn; surgical mask for respiratory or aerosol-generating procedures; eye protection for any splash risk.
+	•	Sharps: never recap needles two-handed. Use single-hand scoop or safety device. Dispose immediately into approved yellow sharps bin after each use.
+	•	Spills: any blood or body fluid spill must be cleaned immediately with 1% sodium hypochlorite solution.
+
+Medical Waste Segregation
+Waste Category
+Examples
+Container
+Disposal Method
+Sharps
+Needles, lancets, broken glass
+Yellow rigid sharps bin
+Certified sharps disposal company
+Infectious / Pathological
+Blood-soaked materials, specimens, cultures
+Yellow biohazard bag
+Autoclave then certified disposal
+Pharmaceutical / Chemical
+Expired reagents, fixatives, chemicals
+Brown container
+Certified chemical disposal company
+General / Non-clinical
+Paper, packaging, non-clinical food waste
+Black bag
+Municipal waste collection
+
+NEVER mix clinical waste categories. Sharps go ONLY into sharps bins. No exceptions. A staff member found placing sharps in a general waste bag will be subject to immediate disciplinary action.
+
+9.5  Fire Safety & Emergency Procedures
+	•	Each centre must have at least two working fire extinguishers (ABC dry powder type) with current inspection tags. The Branch Manager is responsible for ensuring annual servicing.
+	•	Evacuation routes must be clearly marked with visible signage. All new staff are shown the evacuation route on their first day.
+	•	Fire evacuation drills are conducted twice yearly and documented in the Safety Drill Register.
+	•	Emergency numbers posted at every workstation: nearest Fire Service, LASAMBUS, nearest hospital A&E.
+	•	The generator room must be kept clear of flammable materials and fitted with a CO detector.
+
+WHO IS RESPONSIBLE
+COO (Compliance Owner) / Branch Manager (Site Compliance Officer)
+KEY PERFORMANCE INDICATORS
+KPI 1
+MLSCN licence renewal completed 90 days before expiry: 100%
+KPI 2
+IPC training completion for all clinical staff: 100% annually
+KPI 3
+Medical waste disposal records complete and current: 100%
+KPI 4
+NDPR data breach incidents: 0 per year
+KPI 5
+Fire safety drill completed on schedule: 2 per site per year
+ESCALATION: Branch Manager → COO → MD → Regulatory Body (if applicable)
+
+10
+Inventory Management — SD-IMS
+Reagent control, stock levels, FEFO, expiry management
+10.1  System Overview
+Sure Diagnostics uses SD-IMS (Sure Diagnostics Inventory Management System) as the official platform for all reagent and consumable inventory. All movements — receipt, allocation, auto-depletion via LabSmart LIS exports, and reorder triggers — must be managed within SD-IMS. Parallel manual systems for inventory tracking are not permitted.
+
+10.2  Stock Level Framework
+Stock Level
+Definition
+Trigger Action
+Responsible
+Maximum Stock
+2 months supply at average run rate
+Do not reorder
+—
+Reorder Point (ROP)
+3–4 weeks supply remaining
+Raise Purchase Requisition in SD-IMS
+Admin Manager
+Minimum (Safety) Stock
+1 week supply remaining
+Urgent reorder + escalate to COO
+Branch Manager
+Critical Stock Alert
+< 3 days supply remaining
+Emergency procurement + consider test suspension
+COO / MD
+
+Reorder requests must be raised at the Reorder Point — never wait until Minimum Stock. Reaching Minimum Stock is a failure of process. Reaching Critical Stock is a management escalation.
+
+10.3  Stock Receipt & Storage Protocol
+	•	On delivery, the Admin Manager and relevant Head of Unit jointly verify against the Purchase Order: item type, quantity, batch number, expiry date, and condition.
+	•	Any discrepancy between delivered goods and the PO is noted on the Goods Received Note (GRN) and reported to the supplier immediately. Payment is not authorised until the discrepancy is resolved.
+	•	New stock is entered into SD-IMS under the correct SKU with batch number, expiry date, and quantity received.
+	•	Apply FEFO (First Expiry, First Out): newer stock goes to the back of the shelf or fridge. Older stock is always used first.
+	•	Cold-chain reagents must be transferred to the appropriate refrigerator within 30 minutes of receipt. Fridge temperature is logged at the time of storage.
+
+10.4  Expiry Management
+	•	SD-IMS generates a monthly Expiry Alert Report flagging all items expiring within 60 days. Admin Manager reviews this report by the 5th of each month.
+	•	Items within 30 days of expiry with stock exceeding 1 month's usage trigger a vendor return request or inter-branch transfer if another site can use the stock before expiry.
+	•	Expired items are quarantined immediately in a labelled 'DO NOT USE' zone and disposed of through certified waste disposal within 7 days.
+	•	All expired stock disposals are documented on the Waste Disposal Record and signed by the Branch Manager.
+
+10.5  Monthly Inventory Reconciliation
+On the last working day of each month, the Admin Manager conducts a physical count of all reagents and consumables. The count is reconciled against SD-IMS records.
+	•	Any variance greater than 5% for a line item requires a written explanation submitted to the COO within 2 working days.
+	•	Recurring unexplained variances (two consecutive months) trigger a formal investigation by the COO.
+	•	Reconciliation results feed directly into the Branch P&L as the reagent cost of goods sold.
+
+WHO IS RESPONSIBLE
+Admin Manager / Head of Unit
+KEY PERFORMANCE INDICATORS
+KPI 1
+Stockout incidents per month: target 0 (no test suspended due to stock failure)
+KPI 2
+Expired stock write-off value: < 2% of monthly reagent spend
+KPI 3
+Monthly inventory reconciliation variance: < 3% overall
+KPI 4
+Purchase Requisitions raised at ROP or above: 100% (never at Minimum Stock level)
+ESCALATION: Admin Manager → COO → MD
+
+11
+Sales & Marketing Management
+Partner management, corporate sales, HMO acquisition & digital marketing
+11.1  Partner (Referral Doctor) Management
+Referring doctors and health providers are our most valuable commercial relationship. The Marketing Manager is responsible for the entire partner lifecycle.
+Partner Onboarding
+	•	New partners complete the Sure Partners Form and are added to the partners database.
+	•	Add partner to WhatsApp/Telegram groups for clinical updates and engagement.
+	•	Brief the partner on our service menu, TAT standards, and how to refer patients.
+
+Partner Engagement Cadence
+	•	Weekly visits or calls to every active partner to maintain the relationship and gather feedback.
+	•	Follow-up calls or WhatsApp messages within 48–72 hours of a referred patient's visit, asking about the patient's condition and whether results aided management.
+	•	Birthday and wedding anniversary acknowledgements for key partners.
+	•	Gifts to key partners during Ramadan, Christmas, and New Year.
+	•	Quarterly Partners Webinar — clinical updates, new services, recognition of top referrers.
+
+Partner Rebate Structure
+Partner Tier
+Monthly Referral Revenue
+Rebate Rate
+Standard Partner
+Up to N150,000/month
+20% of confirmed referral revenue
+Premium Partner
+> N150,000/month
+25–30% (negotiated with COO approval)
+
+11.2  Corporate Account Acquisition
+Corporate accounts (companies paying for employee health services) are a high-margin, predictable revenue channel. The following 4-stage process governs every corporate acquisition:
+
+Stage 1 — Prospecting
+	•	Marketing Manager maps target companies by proximity to each Sure centre and employee headcount (minimum 20 employees).
+	•	Priority sectors: banking, manufacturing, FMCG, education, logistics, oil and gas.
+	•	Initial contact: phone call first, followed by email with the Sure Corporate Diagnostics Brochure.
+Stage 2 — Proposal & Negotiation
+	•	Prepare a tailored corporate proposal: service menu, pricing, TAT standards, reporting format, and billing terms.
+	•	All corporate pricing requires COO sign-off before being offered. Discounts beyond the standard corporate rate require MD approval.
+Stage 3 — Contract & Onboarding
+	•	A signed Sure Corporate Service Agreement (CSA) is mandatory before any corporate patient is seen. No verbal agreements.
+	•	CSA specifies: contracted services, agreed prices, billing cycle (monthly), payment terms (30 days), authorised company contacts, and dispute resolution.
+	•	Once signed, company is added to LabSmart LIS as a Corporate Client. All their patients are registered under the corporate account.
+Stage 4 — Account Management
+	•	Monthly service report sent to the corporate client alongside their invoice.
+	•	Marketing Manager conducts a quarterly check-in meeting with the HR/admin contact.
+	•	Corporate accounts reviewed annually for repricing in line with cost changes.
+
+11.3  HMO Panel Acquisition
+	•	Marketing Manager identifies target HMOs operating in Sure catchment areas. Priority: AIICO, Leadway Health, Avon HMO, Hygeia, Reliance HMO.
+	•	Submit Panel Application Package: MLSCN licences, FMOH registration, facility capacity description, test menu, and proposed pricing schedule.
+	•	Negotiate panel rates. Ensure contracted rates remain above the minimum price floor (reference PriceIQ). All HMO rate cards require COO approval before signing.
+	•	On approval: obtain Provider Code, pre-authorisation process, and claims submission format.
+	•	Brief the FDO/CSO team: patient eligibility verification, pre-authorisation for specific tests, and claims submission.
+	•	New HMO goes live only after all above steps are complete. No HMO patient seen without a valid panel agreement.
+
+11.4  Occupational Health Packages
+Package
+Included Tests
+Target Sector
+Basic Pre-Employment
+FBC, FBS, U&E, LFT, HBsAg, HIV screen, Chest X-ray, Urinalysis
+SMEs, logistics companies
+Enhanced Pre-Employment
+All Basic + ECG, Sickle cell screen, Malaria screen, BMI, vision test
+Banks, manufacturing, oil & gas
+Food Handler Annual
+HBsAg, VDRL, Typhoid, Stool M/C/S, Chest X-ray, Urinalysis
+Restaurants, schools, food companies
+Executive Health Check
+Full biochemical panel + cardiac markers + abdominal ultrasound + ECG + PSA or PAP smear
+Senior management, C-suite
+
+11.5  Marketing Campaigns & Events
+The Marketing Manager is responsible for executing the following minimum activity levels per month:
+	•	4 street / house-to-house / boot-to-boot campaigns per month.
+	•	1 antenatal group presentation (minimum 10 attendees), 1 association, 1 church/mosque, 1 market — per month.
+	•	Quarterly Healthcare Partners Forum (webinar or in-person).
+	•	At least 2 radio station appearances per year.
+	•	At least 1 doctors' forum presentation or sponsorship per year.
+
+11.6  Digital Marketing Standards
+All digital marketing activity is governed by the Marketing Manager and must meet the following minimum standards:
+	•	At least 2 posts per day across all social media platforms (Instagram, Facebook, Twitter/X, WhatsApp).
+	•	At least 4 articles published per month (Medium and cross-posted).
+	•	At least 3 video content pieces per quarter.
+	•	At least 1 WhatsApp/Instagram online health event per month.
+	•	Monthly happy new month broadcast/SMS from the CEO.
+CREDENTIALS POLICY: Login credentials for all digital platforms are stored in the approved Sure Diagnostics password manager. Contact the Marketing Manager or COO for access. Credentials must never be stored in this manual or shared via unsecured channels.
+
+11.7  Marketing Reporting
+All marketing staff submit the following reports:
+	•	Daily Report (by 9:00 AM the following day): total leads generated, inactive partners contacted, active partners activated, total active partners, samples/patients picked, revenue generated.
+	•	Weekly Report (by Saturday or Monday): cumulative weekly metrics for all daily report items.
+	•	Monthly Report (by 2nd working day of new month): full commercial performance, targets vs. actuals, new partnerships, and campaign outcomes.
+
+WHO IS RESPONSIBLE
+Marketing Manager / COO
+KEY PERFORMANCE INDICATORS
+KPI 1
+Number of active corporate accounts (growing monthly)
+KPI 2
+Number of active HMO panels (minimum 3 major HMOs per site)
+KPI 3
+Corporate and HMO revenue as % of total (target: >= 30%)
+KPI 4
+Corporate invoice collection within 30 days (target: >= 85%)
+KPI 5
+New corporate accounts signed per quarter (target: minimum 2 per site)
+ESCALATION: Marketing Manager → COO → MD
+
+12
+Human Resources Management
+Recruitment, onboarding, scheduling, appraisal & staff development
+12.1  Staff Documentation
+ALL STAFF must complete all employment documentation within 2 weeks of resumption. Salary will be withheld until documentation is complete. Contact HR for the full documentation checklist.
+
+12.2  Duty Scheduling
+	•	Heads of Unit submit preferred schedules for the new month to the Admin/Operations Manager by the last Saturday of the current month.
+	•	Admin Manager reviews and approves schedules before circulation to the team.
+	•	Each shift must include the required skill sets for the unit. Scheduling gaps that leave a unit unqualified to deliver a service are not acceptable.
+	•	Shift changes may be arranged between staff members but must be approved by the Admin Manager in advance.
+
+12.3  Staff Training & Development
+	•	All staff are responsible for their own professional development, including attending mandatory induction and training events.
+	•	Participation in pep talks, clinical meetings, and general staff meetings is mandatory.
+	•	Every staff member must complete a minimum of 5–8 hours of verified training per month (online or offline). Associates are assessed against this standard in their monthly appraisal.
+	•	Sure Greatness University platform is available for ongoing learning. All staff must be enrolled.
+
+12.4  Performance Appraisal
+Every staff member undergoes formal performance appraisal quarterly and annually. The following must be in place before any appraisal can be conducted:
+	•	Employment letter on file
+	•	Signed key job description / outcomes document
+	•	Signed acknowledgement of the Sure Operation Manual
+	•	Signed acknowledgement of the Staff Handbook
+	•	Relevant tools and templates issued
+	•	Sure Staff ID Card issued
+
+Appraisal results are released at the Staff General Meeting. Staff scoring above 69.9% are recognised and rewarded. The highest-scoring staff member becomes Staff of the Month. Performance-based promotion is the only basis for advancement.
+
+12.5  Staff Recognition
+	•	Staff of the Month: highest appraisal score, announced at Staff General Meeting.
+	•	Sure Inspiration Award: recognises the staff member who has had the greatest positive impact on patients, colleagues, and the organisation.
+	•	MD's Award: at the MD's discretion for exceptional performance or contribution.
+	•	Annual Staff of the Year: best cumulative appraisal performance across the year, recognised at the Annual Family Get-Together.
+
+12.6  Meetings Schedule
+Meeting
+Frequency
+Time
+Focus
+Pep Talk
+Every Monday
+8:00–8:20 AM
+Team energy, weekly priorities, recognition
+Ops / Marketing Management
+Weekly
+As scheduled
+Commercial and operational review
+Clinical Meeting
+Monthly
+As scheduled
+QC results, EQA, TAT, case review, CAPA
+Staff General Meeting
+Monthly
+4:00 PM, Ilasa
+Reports, recognition, appraisal results, AOB
+Head of Unit (HOU) Meeting
+Monthly
+As scheduled
+Operational coordination across units
+Annual Family Get-Together
+Annually
+As announced
+Staff of the Year, team celebration
+
+WHO IS RESPONSIBLE
+HR Manager / Operations Manager
+KEY PERFORMANCE INDICATORS
+KPI 1
+Staff documentation completion within 2 weeks of resumption: 100%
+KPI 2
+Monthly training hours per staff member: minimum 5–8 hours
+KPI 3
+Quarterly appraisal completion rate: 100% of eligible staff
+KPI 4
+Staff satisfaction score: >= 4.0/5.0 (assessed at general meeting)
+KPI 5
+Staff turnover rate: monitored and reviewed quarterly by COO
+ESCALATION: Branch Manager → HR Manager → COO → MD
+
+13
+Sure Career Path
+Qualifications, grade levels & compensation across all functions
+13.1  Career Architecture
+The Sure Career Path provides a clear progression route for every staff member across all functional areas. Promotion is strictly performance-based and must be supported by the relevant qualifications for the target grade.
+
+13.2  Pathology & Laboratory Track
+Grade
+Minimum Qualification
+Key Responsibilities
+Lab Assistant
+Relevant certificate, no experience required
+Sample handling, basic admin, cleaning and organisation
+Lab Technician
+ND Lab Technology, < 1 year experience
+Sample collection, basic test processing, equipment care
+Senior Lab Technician
+ND Lab Technology, 3+ years experience
+All technician duties + junior staff supervision
+Lab Scientist
+BSc Medical Lab Science, MLSCN registered, NYSC
+Full test processing, QC, result validation and release
+Senior Lab Scientist
+BSc MLS, MLSCN registered, 4+ years post-qualification
+All scientist duties + IQC oversight, EQA coordination
+Chief Lab Scientist
+BSc MLS, 7+ years, management experience
+Full unit management, QMS ownership, staff development
+Consultant Pathologist
+FMCP (Lab Medicine) or equivalent, licensed
+Specialist reporting, QMS governance, referral management
+
+13.3  Radiology Track
+Grade
+Minimum Qualification
+Key Focus
+Asst X-ray Technician
+ND Radiography, < 1 year
+Patient positioning, basic X-ray under supervision
+X-ray Technician
+ND Radiography, 2+ years
+Independent X-ray, basic image quality review
+Senior X-ray Technician
+ND Radiography, 5+ years
+X-ray + supervision of junior technicians
+Radiographer / Sonographer
+BSc Radiography, valid RRBN licence, 1+ year
+Full radiographic and sonographic examinations
+Senior Radiographer
+BSc + PGD Sonography, 4+ years post-qualification, NYSC
+All modalities + quality oversight + report review
+Chief Radiographer
+BSc + PGD Sonography, 7+ years, management
+Full radiology unit management, teleradiology coordination
+Consultant Radiologist
+4-year radiology residency, specialty fellowship, licensed
+Specialist reporting, teleradiology QA, case consultation
+
+13.4  Finance Track
+Grade
+Minimum Qualification
+Base Scope
+Accounting Assistant
+ND / HND Accounting, 1 year
+Bookkeeping, receipt filing, daily reports
+Accounting Officer
+HND / BSc Accounting, 2 years
+Zoho Books entry, vendor payments, bank reconciliation
+Senior Accounting Officer
+HND / BSc Accounting, 2+ years
+All officer duties + payroll support, P&L drafting
+Asst Finance Manager
+BSc Accounting, 2–4 years, ICAN / ACA
+Branch P&L, HMO billing, management accounts
+Finance Manager
+BSc Accounting, 6–8 years, ICAN / ACA
+Full financial management, audit oversight, budgeting
+CFO / VP Finance
+BSc Accounting, 10+ years, ICAN / ACA, Masters preferred
+CFO-level governance, investor reporting, treasury
+
+13.5  Marketing Track
+Grade
+Performance Target / Month
+Commission Structure
+Marketing Assistant
+N750,000 referral revenue
+1% on partner referrals, 10% on corporate/direct, N15,000 basic, N1,000 BTA/week
+Marketing Officer
+N1,000,000
+1% partner, 10% corporate, N20,000 basic, N1,000 BTA/week
+Senior Marketing Officer
+N2,000,000
+2% partner, 12.5% corporate, N25,000 basic, N1,500 BTA/week
+Asst Marketing Manager
+N2,500,000
+3% partner, 15% corporate, N40,000 basic, N2,000 BTA/week
+Marketing Manager
+N3,500,000
+4% partner, 20% corporate, N60,000 basic, N3,000 BTA/week, car on target
+Senior Marketing Manager
+N5,000,000
+5% partner, 25% corporate, N100,000 basic, car on target
+
+13.6  Operations & Administration Track
+Grade
+Qualifications
+Base Pay
+Customer Service Officer
+OND / HND Business Admin, 0–1 year
+N25,000 basic
+Customer Service Executive
+HND / BSc Business Admin, 2+ years
+N30,000 basic
+Asst Operations Manager
+HND / BSc Business Admin, 4 years
+N40,000 basic
+Operations Manager
+BSc Business Admin, 4 years, diagnostic centre experience
+N50,000 basic
+Senior Operations Manager
+BSc / Masters Operations Management, 7 years, finance literacy
+N80,000 basic
+COO / VP Operations
+Masters degree, 12–15 years, finance and operations expertise
+By negotiation
+
+14
+CEO Command Centre & Executive Operating Rhythm
+Dashboard architecture, KPI governance & strategic meeting cadence
+14.1  Management Philosophy
+The MD/COO of a multi-site diagnostic network cannot manage by walking around. They must manage by data. The CEO Command Centre provides real-time intelligence on every branch's financial performance, clinical quality, commercial momentum, and operational health — from any location, at any time.
+
+14.2  Weekly Performance Dashboard
+The Sure Diagnostics Weekly Performance Dashboard is generated every Monday by 10:00 AM from LabSmart LIS export data. It covers:
+Dashboard Panel
+Metrics
+Alert Threshold
+Revenue
+Total weekly revenue by branch and channel (OOP / HMO / Corporate)
+< 80% of weekly target
+Patient Volume
+Total patients seen per branch, tests performed by category
+< 75% of weekly target
+TAT Compliance
+% of results released within TAT standard by branch
+< 90% compliance
+Quality (QC)
+IQC pass/fail by branch, rejection rate, EQA status
+Any IQC failure
+Referral Activity
+New partners, active referrers, referral revenue
+Active referrers declining month-on-month
+Stock Alerts
+Items at or below Reorder Point, expiry alerts
+Any item at Minimum Stock
+Equipment Status
+Downtime incidents, maintenance schedule adherence
+Any unplanned downtime > 4 hours
+
+14.3  Monthly Performance Dashboard
+The Monthly Performance Dashboard is generated by the 5th working day of each new month and reviewed at the Monthly Branch Review. It covers:
+	•	Branch P&L summary with EBITDA per branch and company-wide.
+	•	Revenue trend vs. prior month and vs. same month prior year.
+	•	Test profitability analysis (highest and lowest margin tests by volume — from PriceIQ).
+	•	HMO receivables aging and collection rate.
+	•	Corporate account revenue and growth.
+	•	Referrer league table (top 10 referrers by revenue generated).
+	•	Staff headcount, absenteeism rate, and appraisal completion status.
+	•	QMS scorecard: IQC performance, EQA results, NCR count, CAPA status.
+	•	Inventory: reagent spend vs. budget, write-off value, stockout incidents.
+
+14.4  Executive Operating Rhythm
+Meeting
+Frequency
+Chaired By
+Purpose & Output
+Operations Huddle
+Daily 8:10 AM
+Branch Manager
+Yesterday's revenue, today's schedule, any blockers. Max 10 minutes.
+Marketing & Sales Review
+Weekly (Monday)
+Marketing Manager
+Referrer activity, leads, campaigns, revenue vs. target.
+Branch Manager Sync
+Weekly (Wednesday)
+COO
+Operational issues, stock, staffing, quality flags. Dashboard review.
+Clinical Meeting
+Monthly
+Hub Lab Head / Chief Radiographer
+QC results, EQA, NCRs, TAT analysis, critical value incidents.
+Full Branch Review
+Monthly
+MD / COO
+Branch P&L, appraisal results, monthly dashboard, strategy.
+Board / Strategy Review
+Quarterly
+MD
+Expansion decisions, financial performance, competitive landscape.
+
+14.5  Network KPI Scorecard
+The following scorecard is reviewed at every Monthly Branch Review. Each metric has an owner, a target, and a consequence trigger if missed two months in a row.
+
+KPI
+Target
+Owner
+Review Freq.
+Missed x 2 = Action
+Monthly revenue vs. target
+>= 95%
+Branch Manager
+Monthly
+Formal performance review
+Patient volume vs. target
+>= 90%
+Branch Manager
+Monthly
+Marketing intervention plan
+HMO collection rate
+>= 85% in 30 days
+Finance Manager
+Monthly
+HMO relationship escalation
+IQC pass rate
+>= 98%
+Lab Head
+Monthly
+QMS investigation + CAPA
+TAT compliance
+>= 95%
+Lab / Rad Head
+Weekly
+Process review + retraining
+Staff absenteeism
+< 5% per month
+HR / Branch Mgr
+Monthly
+HR intervention
+Stockout incidents
+0 per month
+Admin Manager
+Monthly
+Procurement process review
+Customer satisfaction
+>= 4.0 / 5.0
+Branch Manager
+Monthly
+SurePACE retraining
+New referrers added
+>= 2 per site/month
+Marketing Manager
+Monthly
+Sales team review
+
+15
+The Sure PERFECT Professional
+Our people standards and the culture we are building
+15.1  The PERFECT Framework
+At Sure Diagnostics, we are committed to raising PERFECT Professionals. This is the standard we hold every team member to — regardless of role, seniority, or location:
+
+Letter
+Standard
+What This Means at Sure
+P
+Prompt & Professional
+On time, properly dressed, reliable in all commitments
+E
+Excellent
+Above-average performance in every interaction and output
+R
+Reliable
+Consistent delivery — patients and partners can count on you
+F
+Friendly & Empathic
+Warm, human, and genuinely caring in every interaction
+E
+Expert & Competent
+Technically skilled and continuously improving
+C
+Committed & Courageous
+Dedicated to Sure's mission; willing to raise issues and own outcomes
+T
+Truthful & Trustworthy
+100% integrity in all dealings with patients, partners, and colleagues
+
+15.2  The Owners Mentality
+Every Sure Diagnostics team member is expected to operate with an Owners Mentality. This does not mean you own shares — it means you care about the centre as if you do. You notice what needs to be fixed before being told. You protect the company's resources as if they are your own. You go the extra mile without being asked. You are proud of what we are building.
+
+The behaviours that reflect an Owners Mentality at Sure include:
+	•	Reporting facility issues proactively, not waiting to be asked.
+	•	Treating every patient with the care you would want for your own family member.
+	•	Contributing innovative ideas to improve the business.
+	•	Holding yourself and your colleagues to the standards in this manual — not because you are told to, but because you believe in them.
+	•	Taking personal responsibility for your results and your growth.
+
+SURE DIAGNOSTICS HEALTH SERVICES
+Operation Manual v2.0 — 2026
+CONFIDENTIAL — FOR INTERNAL USE ONLY
+Document Owner: COO / MD  |  Review Due: January 2027
+Lagos & Osun, Nigeria

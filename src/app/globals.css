@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Class-based dark mode: `dark:` utilities apply when `.dark` is on <html>
+   or an ancestor, toggled by ThemeToggle and persisted to localStorage
+   (see the inline script in layout.tsx that applies it before paint). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
