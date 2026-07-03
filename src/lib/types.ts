@@ -8,6 +8,7 @@ export interface Company {
   name: string;
   slug: string;
   is_active: boolean;
+  website_url: string | null;
 }
 
 export interface Department {
