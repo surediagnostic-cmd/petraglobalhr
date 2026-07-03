@@ -99,6 +99,7 @@ export function AppSidebar({
           <NavLink href="/training">Training</NavLink>
           <NavLink href="/messages">Messages</NavLink>
           <NavLink href="/directory">Directory</NavLink>
+          {isHrOrMd && <NavLink href="/analytics">Analytics</NavLink>}
           {isHrOrMd && <NavLink href="/admin">Admin</NavLink>}
           {isSuperAdmin && <NavLink href="/admin/companies">Companies</NavLink>}
         </nav>

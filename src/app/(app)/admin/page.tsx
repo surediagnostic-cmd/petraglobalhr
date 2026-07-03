@@ -3,7 +3,6 @@ import { requireHrOrMd } from "@/lib/auth/session";
 import { Card, CardTitle } from "@/components/ui/card";
 
 const sections = [
-  { href: "/admin/analytics", title: "Analytics", description: "Staff, goals, training & acknowledgement numbers" },
   { href: "/admin/company-profile", title: "Company profile", description: "Set your public website/Linktree link" },
   { href: "/admin/manual", title: "Manual & Handbook", description: "Author your Operation Manual and Staff Handbook" },
   { href: "/admin/appraisals", title: "Appraisals", description: "Run quarterly/annual staff appraisals" },

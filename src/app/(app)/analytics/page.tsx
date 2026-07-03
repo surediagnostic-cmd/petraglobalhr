@@ -1,5 +1,7 @@
 import { requireHrOrMd } from "@/lib/auth/session";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { AnalyticsScopeSelect } from "./scope-select";
 import { Card, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -66,14 +68,67 @@ function HeadcountChart({ months }: { months: { label: string; count: number }[]
   );
 }
 
-export default async function AnalyticsPage() {
+export default async function AnalyticsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ company?: string; branch?: string }>;
+}) {
   const profile = await requireHrOrMd();
+  const params = await searchParams;
   const supabase = await createClient();
 
+  let companies: { id: string; name: string }[] = [];
+  let branchOptions: { id: string; name: string }[] = [];
+  let scopeCompanyId = profile.company_id;
+  let scopeCompanyName = profile.company_name;
+  let scopeBranchId: string | null = null;
+
+  // Non-super-admins are always scoped to their own company by RLS anyway —
+  // `db` only needs to be the service-role client when a super admin picks a
+  // *different* company than their own, since RLS would otherwise hide it.
+  let db = supabase;
+
+  if (profile.is_super_admin) {
+    const { data: companyRows } = await supabase.from("hrm_companies").select("id, name").order("name");
+    companies = companyRows ?? [];
+
+    scopeCompanyId =
+      params.company && companies.some((c) => c.id === params.company) ? params.company : profile.company_id;
+    scopeCompanyName = companies.find((c) => c.id === scopeCompanyId)?.name ?? profile.company_name;
+
+    db = createAdminClient();
+
+    const { data: branchRows } = await db
+      .from("hrm_branches")
+      .select("id, name")
+      .eq("company_id", scopeCompanyId)
+      .order("name");
+    branchOptions = branchRows ?? [];
+
+    // Guards against a stale ?branch= left over from a previously selected company.
+    scopeBranchId =
+      params.branch && branchOptions.some((b) => b.id === params.branch) ? params.branch : null;
+  }
+
+  let staffQuery = db
+    .from("hrm_profiles")
+    .select("id, role, branch_id, department_id, employment_status, date_joined")
+    .eq("company_id", scopeCompanyId);
+  if (scopeBranchId) staffQuery = staffQuery.eq("branch_id", scopeBranchId);
+
+  const [{ data: staff }, { data: branches }, { data: departments }] = await Promise.all([
+    staffQuery,
+    db.from("hrm_branches").select("id, name").eq("company_id", scopeCompanyId),
+    db.from("hrm_departments").select("id, name").eq("company_id", scopeCompanyId),
+  ]);
+
+  // Goals/appraisals/training/acknowledgements are keyed by profile_id, not
+  // branch — scoping them to this company+branch means scoping to exactly
+  // the staff we just resolved above, rather than re-deriving branch
+  // membership per table.
+  const staffIds = (staff ?? []).map((s) => s.id);
+
   const [
-    { data: staff },
-    { data: branches },
-    { data: departments },
     { data: goals },
     { data: goalReports },
     { data: trainingRecords },
@@ -81,18 +136,20 @@ export default async function AnalyticsPage() {
     { data: appraisals },
     { data: activeManuals },
   ] = await Promise.all([
-    supabase.from("hrm_profiles").select("id, role, branch_id, department_id, employment_status, date_joined"),
-    supabase.from("hrm_branches").select("id, name"),
-    supabase.from("hrm_departments").select("id, name"),
-    supabase.from("hrm_goals").select("id, status"),
-    supabase.from("hrm_goal_reports").select("id, review_status"),
-    supabase.from("hrm_training_records").select("id, status, hours_logged, completed_at"),
-    supabase.from("hrm_training_modules").select("id"),
-    supabase.from("hrm_appraisals").select("id, status"),
-    supabase
-      .from("hrm_manual_documents")
-      .select("id, doc_type, version")
-      .eq("status", "active"),
+    staffIds.length
+      ? db.from("hrm_goals").select("id, status").in("profile_id", staffIds)
+      : Promise.resolve({ data: [] }),
+    staffIds.length
+      ? db.from("hrm_goal_reports").select("id, review_status").in("profile_id", staffIds)
+      : Promise.resolve({ data: [] }),
+    staffIds.length
+      ? db.from("hrm_training_records").select("id, status, hours_logged, completed_at").in("profile_id", staffIds)
+      : Promise.resolve({ data: [] }),
+    db.from("hrm_training_modules").select("id").eq("company_id", scopeCompanyId),
+    staffIds.length
+      ? db.from("hrm_appraisals").select("id, status").in("profile_id", staffIds)
+      : Promise.resolve({ data: [] }),
+    db.from("hrm_manual_documents").select("id, doc_type, version").eq("company_id", scopeCompanyId).eq("status", "active"),
   ]);
 
   const totalStaff = staff?.length ?? 0;
@@ -146,14 +203,16 @@ export default async function AnalyticsPage() {
 
   // Acknowledgement completion, per active document (operation manual /
   // staff handbook), against total staff — a direct read on the 12.4
-  // pre-appraisal gate's compliance state across the whole company.
+  // pre-appraisal gate's compliance state across the in-scope staff.
   const ackByDocument: { title: string; version: string; acknowledgedCount: number }[] = [];
   for (const doc of activeManuals ?? []) {
-    const { count } = await supabase
+    let ackQuery = db
       .from("hrm_manual_acknowledgements")
       .select("id", { count: "exact", head: true })
       .eq("document_id", doc.id)
       .eq("version", doc.version);
+    if (staffIds.length) ackQuery = ackQuery.in("profile_id", staffIds);
+    const { count } = staffIds.length ? await ackQuery : { count: 0 };
     ackByDocument.push({
       title: doc.doc_type === "operation_manual" ? "Operation Manual" : "Staff Handbook",
       version: doc.version,
@@ -165,8 +224,18 @@ export default async function AnalyticsPage() {
     <div className="max-w-4xl">
       <h1 className="mb-1 text-xl font-semibold dark:text-slate-100">Analytics</h1>
       <p className="mb-6 text-sm text-slate-500 dark:text-slate-400">
-        {profile.company_name} — company-wide numbers.
+        {scopeCompanyName}
+        {scopeBranchId ? ` — ${branchOptions.find((b) => b.id === scopeBranchId)?.name ?? ""}` : " — company-wide numbers."}
       </p>
+
+      {profile.is_super_admin && (
+        <AnalyticsScopeSelect
+          companies={companies}
+          branches={branchOptions}
+          selectedCompanyId={scopeCompanyId}
+          selectedBranchId={scopeBranchId}
+        />
+      )}
 
       <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
         <StatCard label="Total staff" value={totalStaff} sub={`${activeStaff} active`} />
