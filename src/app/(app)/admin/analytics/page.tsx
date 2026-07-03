@@ -26,6 +26,46 @@ function ProgressBar({ value }: { value: number }) {
   );
 }
 
+// Horizontal bar row for distribution breakdowns (staff by department/branch)
+// — same data as a plain count badge, but the relative bar width makes it
+// readable at a glance without needing a charting library.
+function DistributionRow({ label, count, max }: { label: string; count: number; max: number }) {
+  const pct = max > 0 ? Math.round((count / max) * 100) : 0;
+  return (
+    <div className="text-sm">
+      <div className="mb-1 flex items-center justify-between">
+        <span className="text-slate-700 dark:text-slate-300">{label}</span>
+        <span className="text-slate-500 dark:text-slate-400">{count}</span>
+      </div>
+      <ProgressBar value={pct} />
+    </div>
+  );
+}
+
+// Simple cumulative-headcount bar chart over the last 6 months, computed
+// from date_joined — no historical snapshots table exists, but "how many
+// people had joined by the end of month X" is fully derivable from data
+// we already have.
+function HeadcountChart({ months }: { months: { label: string; count: number }[] }) {
+  const max = Math.max(1, ...months.map((m) => m.count));
+  return (
+    <div className="flex h-32 gap-3">
+      {months.map((m) => (
+        <div key={m.label} className="flex flex-1 flex-col items-center gap-1">
+          <span className="text-xs text-slate-500 dark:text-slate-400">{m.count}</span>
+          <div className="flex w-full flex-1 items-end">
+            <div
+              className="w-full rounded-t bg-slate-900 dark:bg-slate-100"
+              style={{ height: `${Math.max(4, Math.round((m.count / max) * 100))}%` }}
+            />
+          </div>
+          <span className="text-xs text-slate-500 dark:text-slate-400">{m.label}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default async function AnalyticsPage() {
   const profile = await requireHrOrMd();
   const supabase = await createClient();
@@ -41,7 +81,7 @@ export default async function AnalyticsPage() {
     { data: appraisals },
     { data: activeManuals },
   ] = await Promise.all([
-    supabase.from("hrm_profiles").select("id, role, branch_id, department_id, employment_status"),
+    supabase.from("hrm_profiles").select("id, role, branch_id, department_id, employment_status, date_joined"),
     supabase.from("hrm_branches").select("id, name"),
     supabase.from("hrm_departments").select("id, name"),
     supabase.from("hrm_goals").select("id, status"),
@@ -72,6 +112,15 @@ export default async function AnalyticsPage() {
     staffByBranch.set(label, (staffByBranch.get(label) ?? 0) + 1);
   }
 
+  const now = new Date();
+  const headcountMonths: { label: string; count: number }[] = [];
+  for (let i = 5; i >= 0; i--) {
+    const monthDate = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    const endOfMonth = new Date(monthDate.getFullYear(), monthDate.getMonth() + 1, 0);
+    const count = (staff ?? []).filter((s) => s.date_joined && new Date(s.date_joined) <= endOfMonth).length;
+    headcountMonths.push({ label: monthDate.toLocaleString("en", { month: "short" }), count });
+  }
+
   const staffByRole = { staff: 0, hr_manager: 0, md: 0 } as Record<string, number>;
   for (const s of staff ?? []) staffByRole[s.role] = (staffByRole[s.role] ?? 0) + 1;
 
@@ -86,7 +135,6 @@ export default async function AnalyticsPage() {
       ? Math.round((completedTraining / trainingRecords.length) * 100)
       : 0;
 
-  const now = new Date();
   const monthHours = (trainingRecords ?? [])
     .filter((r) => r.completed_at && new Date(r.completed_at).getMonth() === now.getMonth())
     .reduce((sum, r) => sum + Number(r.hours_logged ?? 0), 0);
@@ -131,15 +179,21 @@ export default async function AnalyticsPage() {
         />
       </div>
 
+      <Card className="mb-6">
+        <CardTitle>Headcount growth (last 6 months)</CardTitle>
+        <p className="mt-1 mb-3 text-xs text-slate-500 dark:text-slate-400">
+          Cumulative staff count by join date — not a historical snapshot, so past terminations
+          before this month won&apos;t retroactively lower earlier bars.
+        </p>
+        <HeadcountChart months={headcountMonths} />
+      </Card>
+
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Card>
           <CardTitle>Staff by department</CardTitle>
-          <div className="mt-3 space-y-2">
+          <div className="mt-3 space-y-3">
             {[...staffByDepartment.entries()].map(([name, count]) => (
-              <div key={name} className="flex items-center justify-between text-sm">
-                <span className="text-slate-700 dark:text-slate-300">{name}</span>
-                <Badge>{count}</Badge>
-              </div>
+              <DistributionRow key={name} label={name} count={count} max={totalStaff} />
             ))}
             {staffByDepartment.size === 0 && (
               <p className="text-sm text-slate-500 dark:text-slate-400">No staff yet.</p>
@@ -149,12 +203,9 @@ export default async function AnalyticsPage() {
 
         <Card>
           <CardTitle>Staff by branch</CardTitle>
-          <div className="mt-3 space-y-2">
+          <div className="mt-3 space-y-3">
             {[...staffByBranch.entries()].map(([name, count]) => (
-              <div key={name} className="flex items-center justify-between text-sm">
-                <span className="text-slate-700 dark:text-slate-300">{name}</span>
-                <Badge>{count}</Badge>
-              </div>
+              <DistributionRow key={name} label={name} count={count} max={totalStaff} />
             ))}
             {staffByBranch.size === 0 && (
               <p className="text-sm text-slate-500 dark:text-slate-400">No staff yet.</p>
