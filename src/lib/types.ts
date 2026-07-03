@@ -131,6 +131,31 @@ export interface TrainingRecord {
   completed_at: string | null;
 }
 
+export type JobPostingStatus = "open" | "closed";
+export type CandidateStage = "applied" | "screening" | "interview" | "offer" | "hired" | "rejected";
+
+export interface JobPosting {
+  id: string;
+  company_id: string;
+  branch_id: string | null;
+  department_id: string | null;
+  designation_id: string | null;
+  title: string;
+  description: string | null;
+  status: JobPostingStatus;
+}
+
+export interface Candidate {
+  id: string;
+  company_id: string;
+  job_posting_id: string;
+  full_name: string;
+  email: string | null;
+  phone: string | null;
+  stage: CandidateStage;
+  notes: string | null;
+}
+
 export type ConversationType = "direct" | "channel";
 
 export interface Conversation {

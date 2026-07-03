@@ -7,6 +7,7 @@ const sections = [
   { href: "/admin/company-profile", title: "Company profile", description: "Set your public website/Linktree link" },
   { href: "/admin/manual", title: "Manual & Handbook", description: "Author your Operation Manual and Staff Handbook" },
   { href: "/admin/appraisals", title: "Appraisals", description: "Run quarterly/annual staff appraisals" },
+  { href: "/admin/recruitment", title: "Recruitment", description: "Track open roles and candidates internally" },
   { href: "/admin/branches", title: "Branches", description: "Manage physical locations this company operates from" },
   { href: "/admin/departments", title: "Departments", description: "Manage company departments/units" },
   { href: "/admin/designations", title: "Designations", description: "Job titles, career tracks & grades" },
